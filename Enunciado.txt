@@ -1,0 +1,24 @@
+Enunciado del proyecto
+
+Actualmente tengo un negocio pasatiempo que es de traida de paquetes de USA tipo Courier de manera grupal. 
+
+De momento, llevo el control de todo en un Excel, en donde anoto los siguientes procesos:
+
+1- Se anotan todas las compras que estén de camino al casillero:
+Nombre de la persona.
+Producto que compró.
+Número de tracking que generó la compra.
+Courier con quien enviaron la compra (Fedex, UPS, USPS, etc)
+Estado de la compra (En camino, Recibido en Casillero, Enviado a CR, Facturado).
+Peso registrado en libras.
+
+2- Cada vez que hay 40 libras en el casillero de diferentes compras, yo agrupo todas esas compras recibidas y las envío bajo un solo pedido.
+Por lo que mediante un grupo de Whatsapp les voy informando a los compas sobre el envío y los productos que se vinieron a Costa Rica en ese envío de 40 libras. 
+
+3- Una vez que llega la factura total, yo le sumo mi ganancia y tengo que hacer la división de Total / Numero de Libras (porque no siempre son 40), eso me da un precio por libra y luego tengo que empezar a multiplicar las libras de cada producto * el precio por libra.
+Con esta operación,la persona paga por las libras que trajo, a veces en un solo pedido, vienen varios productos de una misma persona, por lo que tengo que sumar todo por persona. 
+
+4-Una vez que se realiza el calculo, les indico a las personas el monto a pagar para que me depositen y coordinar si tengo que entregarlo o pasan a recogerlo a mi trabajo.
+
+Mi idea es hacer en primera instancia la parte de administrador mia donde hago todas esas operaciones. En una segunda versiòn meto usuario para que puedan registrar las compras, ya que yo no siempre soy el que compra, sino que ellos con mi casillero mandan las cosas y luego me pasan los datos de la compra. Pero esto seria una segunda fase. 
+
