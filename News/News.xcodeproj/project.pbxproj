@@ -19,6 +19,9 @@
 		931E38811E58AE6200A5473B /* UITableViewCell+GetClassName.m in Sources */ = {isa = PBXBuildFile; fileRef = 931E38801E58AE6200A5473B /* UITableViewCell+GetClassName.m */; };
 		931E38841E58C20600A5473B /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 931E38831E58C20600A5473B /* NewsViewController.m */; };
 		93A69AC81E61CEA1000DF9C6 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A69AC71E61CEA1000DF9C6 /* News.m */; };
+		93A69AF91E61EC3B000DF9C6 /* NewsDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A69AF81E61EC3B000DF9C6 /* NewsDetailTableViewController.m */; };
+		93A69AFD1E61F94D000DF9C6 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A69AFB1E61F94D000DF9C6 /* NewsTableViewCell.m */; };
+		93A69AFE1E61F94D000DF9C6 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A69AFC1E61F94D000DF9C6 /* NewsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,11 @@
 		931E38831E58C20600A5473B /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		93A69AC61E61CEA1000DF9C6 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
 		93A69AC71E61CEA1000DF9C6 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		93A69AF71E61EC3B000DF9C6 /* NewsDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailTableViewController.h; sourceTree = "<group>"; };
+		93A69AF81E61EC3B000DF9C6 /* NewsDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailTableViewController.m; sourceTree = "<group>"; };
+		93A69AFA1E61F94D000DF9C6 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		93A69AFB1E61F94D000DF9C6 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
+		93A69AFC1E61F94D000DF9C6 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,11 @@
 				931E38831E58C20600A5473B /* NewsViewController.m */,
 				93A69AC61E61CEA1000DF9C6 /* News.h */,
 				93A69AC71E61CEA1000DF9C6 /* News.m */,
+				93A69AF71E61EC3B000DF9C6 /* NewsDetailTableViewController.h */,
+				93A69AF81E61EC3B000DF9C6 /* NewsDetailTableViewController.m */,
+				93A69AFA1E61F94D000DF9C6 /* NewsTableViewCell.h */,
+				93A69AFB1E61F94D000DF9C6 /* NewsTableViewCell.m */,
+				93A69AFC1E61F94D000DF9C6 /* NewsTableViewCell.xib */,
 			);
 			name = News;
 			sourceTree = "<group>";
@@ -193,6 +206,7 @@
 			files = (
 				931E387A1E58A55400A5473B /* CategoryCustomTableViewCell.xib in Resources */,
 				931E38641E589EA600A5473B /* Assets.xcassets in Resources */,
+				93A69AFE1E61F94D000DF9C6 /* NewsTableViewCell.xib in Resources */,
 				931E38621E589EA600A5473B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,8 +223,10 @@
 				93A69AC81E61CEA1000DF9C6 /* News.m in Sources */,
 				931E38811E58AE6200A5473B /* UITableViewCell+GetClassName.m in Sources */,
 				931E38841E58C20600A5473B /* NewsViewController.m in Sources */,
+				93A69AF91E61EC3B000DF9C6 /* NewsDetailTableViewController.m in Sources */,
 				931E385C1E589EA600A5473B /* AppDelegate.m in Sources */,
 				931E38721E589F7300A5473B /* Category.m in Sources */,
+				93A69AFD1E61F94D000DF9C6 /* NewsTableViewCell.m in Sources */,
 				931E387E1E58A70100A5473B /* UITableView+RegisterCustomCell.m in Sources */,
 				931E38591E589EA600A5473B /* main.m in Sources */,
 			);

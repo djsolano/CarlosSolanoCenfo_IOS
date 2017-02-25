@@ -8,6 +8,11 @@
 
 #import "NewsViewController.h"
 #import "Category.h"
+#import "NewsDetailTableViewController.h"
+#import "NewsTableViewCell.h"
+#import "UITableView+RegisterCustomCell.h"
+#import "UITableViewCell+GetClassName.h"
+#import "News.h"
 
 @interface NewsViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -18,7 +23,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.tableView registerCustomCellWithName:[NewsTableViewCell getClassName]];
     self.title = self.categorySelected.name;
+    [self addNewsButton];
     // Do any additional setup after loading the view.
 }
 
@@ -28,11 +35,24 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 0;
+    return self.categorySelected.newsArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return nil;
+    NewsTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:[NewsTableViewCell getClassName]];
+    News * news = self.categorySelected.newsArray[indexPath.row];
+    [cell setupCellWithNews:news];
+    return cell;
+}
+
+-(void) addNewsButton{
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewsAction)];
+    self.navigationItem.rightBarButtonItem = addButton;
+}
+
+-(void) addNewsAction{
+    NewsDetailTableViewController *newsDetailTableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"NewsDetailTableViewController"];
+    [self.navigationController pushViewController:newsDetailTableViewController animated:true];
 }
 /*
 #pragma mark - Navigation
