@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Numbers View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="NumbersViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S65-HX-iVb">
+                                <rect key="frame" x="0.0" y="20" width="375" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Tfr-ca-WpZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwl-7J-fMU">
+                                <rect key="frame" x="0.0" y="84" width="375" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FHE-Xz-qIe">
+                                        <rect key="frame" x="15" y="5" width="265" height="50"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvI-kT-0hw">
+                                        <rect key="frame" x="290" y="5" width="70" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="7Iu-x4-Utx"/>
+                                        </constraints>
+                                        <state key="normal" title="Calcular"/>
+                                        <connections>
+                                            <action selector="calculateNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4C-lu-V7k"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="FHE-Xz-qIe" firstAttribute="leading" secondItem="dwl-7J-fMU" secondAttribute="leading" constant="15" id="4bi-Vc-f2Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="FHE-Xz-qIe" secondAttribute="bottom" constant="5" id="Bem-Dc-rb3"/>
+                                    <constraint firstAttribute="trailing" secondItem="PvI-kT-0hw" secondAttribute="trailing" constant="15" id="OMK-5N-Vg3"/>
+                                    <constraint firstItem="PvI-kT-0hw" firstAttribute="leading" secondItem="FHE-Xz-qIe" secondAttribute="trailing" constant="10" id="fqk-f8-zIZ"/>
+                                    <constraint firstAttribute="height" constant="60" id="iTh-zI-J9i"/>
+                                    <constraint firstAttribute="bottom" secondItem="PvI-kT-0hw" secondAttribute="bottom" constant="5" id="jlb-Kr-uKA"/>
+                                    <constraint firstItem="PvI-kT-0hw" firstAttribute="top" secondItem="dwl-7J-fMU" secondAttribute="top" constant="5" id="wJz-8W-A5o"/>
+                                    <constraint firstItem="FHE-Xz-qIe" firstAttribute="top" secondItem="dwl-7J-fMU" secondAttribute="top" constant="5" id="wmW-UW-Tg0"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cbk-e9-wn8">
+                                <rect key="frame" x="0.0" y="144" width="375" height="523"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="zaN-ki-xex"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dga-Cb-QLa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cbk-e9-wn8" firstAttribute="top" secondItem="dwl-7J-fMU" secondAttribute="bottom" id="453-lJ-OCJ"/>
+                            <constraint firstItem="dwl-7J-fMU" firstAttribute="top" secondItem="S65-HX-iVb" secondAttribute="bottom" id="5TZ-0J-pXm"/>
+                            <constraint firstAttribute="trailing" secondItem="dwl-7J-fMU" secondAttribute="trailing" id="AHf-kM-H4z"/>
+                            <constraint firstAttribute="trailing" secondItem="S65-HX-iVb" secondAttribute="trailing" id="GJg-DY-d5H"/>
+                            <constraint firstItem="cbk-e9-wn8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NAL-HA-smk"/>
+                            <constraint firstItem="dwl-7J-fMU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P9V-v4-pEG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cbk-e9-wn8" secondAttribute="bottom" id="RKA-Tq-QKO"/>
+                            <constraint firstItem="S65-HX-iVb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UDG-zh-T9V"/>
+                            <constraint firstItem="S65-HX-iVb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hyI-qs-cve"/>
+                            <constraint firstAttribute="trailing" secondItem="cbk-e9-wn8" secondAttribute="trailing" id="pCa-P4-Uda"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberTextField" destination="FHE-Xz-qIe" id="hJc-4F-cZa"/>
+                        <outlet property="tableView" destination="cbk-e9-wn8" id="APV-8M-mAw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
