@@ -43,6 +43,7 @@
 }
 - (IBAction)calculateNumber:(id)sender {
     [self.tableView reloadData];
+    [self.view endEditing:YES];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 150;
