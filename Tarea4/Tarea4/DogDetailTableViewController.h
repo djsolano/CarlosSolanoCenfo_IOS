@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Dog;
 
 @interface DogDetailTableViewController : UITableViewController
-
+@property (strong,nonatomic) Dog * selectedDog;
 @end

@@ -79,6 +79,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     DogDetailTableViewController * dogDetail = [self.storyboard instantiateViewControllerWithIdentifier:@"DogDetailTableViewController"];
+    dogDetail.selectedDog = self.dogsArray[indexPath.row];
     [self.navigationController pushViewController:dogDetail animated:YES];
 }
 

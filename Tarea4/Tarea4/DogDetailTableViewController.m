@@ -7,16 +7,35 @@
 //
 
 #import "DogDetailTableViewController.h"
+#import "Dog.h"
 
 @interface DogDetailTableViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *dogImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *colorLabel;
+@property (weak, nonatomic) IBOutlet UILabel *locationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ageLabel;
+@property (weak, nonatomic) IBOutlet UILabel *contactLabel;
 
 @end
+/*
+ @property(readonly) NSString * name;
+ @property(readonly) NSString * color;
+ @property(readonly) NSString * location;
+ @property(readonly) NSNumber * age;
+ @property(readonly) NSString * contactInformation;
+ */
 
 @implementation DogDetailTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.dogImageView.image = [UIImage imageNamed:self.selectedDog.image];
+    self.nameLabel.text =[NSString stringWithFormat:@"Name: %@",self.selectedDog.name] ;
+    self.colorLabel.text =[NSString stringWithFormat:@"Color: %@",self.selectedDog.color];
+    self.locationLabel.text =[NSString stringWithFormat:@"Location: %@",self.selectedDog.location];
+    self.ageLabel.text =[NSString stringWithFormat:@"Age: %d",[self.selectedDog.age intValue]] ;
+    self.contactLabel.text =[NSString stringWithFormat:@"Contact: %@",self.selectedDog.contactInformation];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
