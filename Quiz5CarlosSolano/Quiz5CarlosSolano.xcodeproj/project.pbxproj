@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		93478F611E7D7D720031C85F /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 93478F641E7D7D720031C85F /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				93478F651E7D7DB10031C85F /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		93478F481E7D79730031C85F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93478F471E7D79730031C85F /* main.m */; };
+		93478F4B1E7D79730031C85F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93478F4A1E7D79730031C85F /* AppDelegate.m */; };
+		93478F511E7D79730031C85F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93478F4F1E7D79730031C85F /* Main.storyboard */; };
+		93478F531E7D79730031C85F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93478F521E7D79730031C85F /* Assets.xcassets */; };
+		93478F561E7D79730031C85F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93478F541E7D79730031C85F /* LaunchScreen.storyboard */; };
+		93478F601E7D7BE50031C85F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93478F5E1E7D7BE50031C85F /* Model.xcdatamodeld */; };
+		93478F6A1E7D7EBD0031C85F /* _CDItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 93478F691E7D7EBD0031C85F /* _CDItems.m */; };
+		93478F6D1E7D7EC90031C85F /* CDItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 93478F6C1E7D7EC90031C85F /* CDItems.m */; };
+		93478F711E7D80790031C85F /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93478F701E7D80790031C85F /* CoreDataManager.m */; };
+		93478F741E7D84530031C85F /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93478F731E7D84530031C85F /* ItemsViewController.m */; };
+		93478F781E7D865B0031C85F /* ItemCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93478F761E7D865B0031C85F /* ItemCustomTableViewCell.m */; };
+		93478F791E7D865B0031C85F /* ItemCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93478F771E7D865B0031C85F /* ItemCustomTableViewCell.xib */; };
+		93478F7C1E7D8B780031C85F /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93478F7B1E7D8B780031C85F /* AddItemViewController.m */; };
+		E3B633EE8BACB3F26F6AAA17 /* libPods-Quiz5CarlosSolano.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7122ED0793801E8617600B7 /* libPods-Quiz5CarlosSolano.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7DD0AD750DD1D7616B8BFE8D /* Pods-Quiz5CarlosSolano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiz5CarlosSolano.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quiz5CarlosSolano/Pods-Quiz5CarlosSolano.release.xcconfig"; sourceTree = "<group>"; };
+		93478F431E7D79730031C85F /* Quiz5CarlosSolano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz5CarlosSolano.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93478F471E7D79730031C85F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93478F491E7D79730031C85F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		93478F4A1E7D79730031C85F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93478F501E7D79730031C85F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93478F521E7D79730031C85F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93478F551E7D79730031C85F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93478F571E7D79730031C85F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93478F5F1E7D7BE50031C85F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		93478F681E7D7EBD0031C85F /* _CDItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _CDItems.h; path = "Mogenerator-CoreData/_CDItems.h"; sourceTree = "<group>"; };
+		93478F691E7D7EBD0031C85F /* _CDItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _CDItems.m; path = "Mogenerator-CoreData/_CDItems.m"; sourceTree = "<group>"; };
+		93478F6B1E7D7EC90031C85F /* CDItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDItems.h; path = "Mogenerator-CoreData/CDItems.h"; sourceTree = "<group>"; };
+		93478F6C1E7D7EC90031C85F /* CDItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDItems.m; path = "Mogenerator-CoreData/CDItems.m"; sourceTree = "<group>"; };
+		93478F6F1E7D80790031C85F /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		93478F701E7D80790031C85F /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		93478F721E7D84530031C85F /* ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsViewController.h; sourceTree = "<group>"; };
+		93478F731E7D84530031C85F /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsViewController.m; sourceTree = "<group>"; };
+		93478F751E7D865B0031C85F /* ItemCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCustomTableViewCell.h; sourceTree = "<group>"; };
+		93478F761E7D865B0031C85F /* ItemCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCustomTableViewCell.m; sourceTree = "<group>"; };
+		93478F771E7D865B0031C85F /* ItemCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCustomTableViewCell.xib; sourceTree = "<group>"; };
+		93478F7A1E7D8B780031C85F /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
+		93478F7B1E7D8B780031C85F /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
+		95E54E91F1CD9704426AEAF1 /* Pods-Quiz5CarlosSolano.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiz5CarlosSolano.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quiz5CarlosSolano/Pods-Quiz5CarlosSolano.debug.xcconfig"; sourceTree = "<group>"; };
+		A7122ED0793801E8617600B7 /* libPods-Quiz5CarlosSolano.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Quiz5CarlosSolano.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93478F401E7D79730031C85F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3B633EE8BACB3F26F6AAA17 /* libPods-Quiz5CarlosSolano.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8796C34A2250DD6FE6468D2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7122ED0793801E8617600B7 /* libPods-Quiz5CarlosSolano.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93478F3A1E7D79730031C85F = {
+			isa = PBXGroup;
+			children = (
+				93478F451E7D79730031C85F /* Quiz5CarlosSolano */,
+				93478F441E7D79730031C85F /* Products */,
+				FD2801E868B54E7543587264 /* Pods */,
+				8796C34A2250DD6FE6468D2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93478F441E7D79730031C85F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93478F431E7D79730031C85F /* Quiz5CarlosSolano.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93478F451E7D79730031C85F /* Quiz5CarlosSolano */ = {
+			isa = PBXGroup;
+			children = (
+				93478F6E1E7D7FF00031C85F /* Manager */,
+				93478F5D1E7D7BD60031C85F /* Model */,
+				93478F491E7D79730031C85F /* AppDelegate.h */,
+				93478F4A1E7D79730031C85F /* AppDelegate.m */,
+				93478F4F1E7D79730031C85F /* Main.storyboard */,
+				93478F521E7D79730031C85F /* Assets.xcassets */,
+				93478F541E7D79730031C85F /* LaunchScreen.storyboard */,
+				93478F571E7D79730031C85F /* Info.plist */,
+				93478F461E7D79730031C85F /* Supporting Files */,
+				93478F721E7D84530031C85F /* ItemsViewController.h */,
+				93478F731E7D84530031C85F /* ItemsViewController.m */,
+				93478F751E7D865B0031C85F /* ItemCustomTableViewCell.h */,
+				93478F761E7D865B0031C85F /* ItemCustomTableViewCell.m */,
+				93478F771E7D865B0031C85F /* ItemCustomTableViewCell.xib */,
+				93478F7A1E7D8B780031C85F /* AddItemViewController.h */,
+				93478F7B1E7D8B780031C85F /* AddItemViewController.m */,
+			);
+			path = Quiz5CarlosSolano;
+			sourceTree = "<group>";
+		};
+		93478F461E7D79730031C85F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93478F471E7D79730031C85F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93478F5D1E7D7BD60031C85F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93478F671E7D7E920031C85F /* RobotFiles */,
+				93478F661E7D7E890031C85F /* HumanFiles */,
+				93478F5E1E7D7BE50031C85F /* Model.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		93478F661E7D7E890031C85F /* HumanFiles */ = {
+			isa = PBXGroup;
+			children = (
+				93478F6B1E7D7EC90031C85F /* CDItems.h */,
+				93478F6C1E7D7EC90031C85F /* CDItems.m */,
+			);
+			name = HumanFiles;
+			sourceTree = "<group>";
+		};
+		93478F671E7D7E920031C85F /* RobotFiles */ = {
+			isa = PBXGroup;
+			children = (
+				93478F681E7D7EBD0031C85F /* _CDItems.h */,
+				93478F691E7D7EBD0031C85F /* _CDItems.m */,
+			);
+			name = RobotFiles;
+			sourceTree = "<group>";
+		};
+		93478F6E1E7D7FF00031C85F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				93478F6F1E7D80790031C85F /* CoreDataManager.h */,
+				93478F701E7D80790031C85F /* CoreDataManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		FD2801E868B54E7543587264 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95E54E91F1CD9704426AEAF1 /* Pods-Quiz5CarlosSolano.debug.xcconfig */,
+				7DD0AD750DD1D7616B8BFE8D /* Pods-Quiz5CarlosSolano.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93478F421E7D79730031C85F /* Quiz5CarlosSolano */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93478F5A1E7D79730031C85F /* Build configuration list for PBXNativeTarget "Quiz5CarlosSolano" */;
+			buildPhases = (
+				6E3ED7F8BF9878CED4C5AE93 /* [CP] Check Pods Manifest.lock */,
+				93478F3F1E7D79730031C85F /* Sources */,
+				93478F401E7D79730031C85F /* Frameworks */,
+				93478F411E7D79730031C85F /* Resources */,
+				7C02A6503BD61E15E60ACACD /* [CP] Embed Pods Frameworks */,
+				8317C15B37E0EE793F80B122 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quiz5CarlosSolano;
+			productName = Quiz5CarlosSolano;
+			productReference = 93478F431E7D79730031C85F /* Quiz5CarlosSolano.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93478F3B1E7D79730031C85F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Estudiantes;
+				TargetAttributes = {
+					93478F421E7D79730031C85F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					93478F611E7D7D720031C85F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 93478F3E1E7D79730031C85F /* Build configuration list for PBXProject "Quiz5CarlosSolano" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93478F3A1E7D79730031C85F;
+			productRefGroup = 93478F441E7D79730031C85F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93478F421E7D79730031C85F /* Quiz5CarlosSolano */,
+				93478F611E7D7D720031C85F /* Mogenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93478F411E7D79730031C85F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93478F561E7D79730031C85F /* LaunchScreen.storyboard in Resources */,
+				93478F791E7D865B0031C85F /* ItemCustomTableViewCell.xib in Resources */,
+				93478F531E7D79730031C85F /* Assets.xcassets in Resources */,
+				93478F511E7D79730031C85F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E3ED7F8BF9878CED4C5AE93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7C02A6503BD61E15E60ACACD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quiz5CarlosSolano/Pods-Quiz5CarlosSolano-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8317C15B37E0EE793F80B122 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quiz5CarlosSolano/Pods-Quiz5CarlosSolano-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93478F651E7D7DB10031C85F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator --v2 -m Quiz5CarlosSolano/Model.xcdatamodeld -O Quiz5CarlosSolano/Mogenerator-CoreData --template-var arc=true";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93478F3F1E7D79730031C85F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93478F711E7D80790031C85F /* CoreDataManager.m in Sources */,
+				93478F781E7D865B0031C85F /* ItemCustomTableViewCell.m in Sources */,
+				93478F4B1E7D79730031C85F /* AppDelegate.m in Sources */,
+				93478F741E7D84530031C85F /* ItemsViewController.m in Sources */,
+				93478F7C1E7D8B780031C85F /* AddItemViewController.m in Sources */,
+				93478F481E7D79730031C85F /* main.m in Sources */,
+				93478F6D1E7D7EC90031C85F /* CDItems.m in Sources */,
+				93478F6A1E7D7EBD0031C85F /* _CDItems.m in Sources */,
+				93478F601E7D7BE50031C85F /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		93478F4F1E7D79730031C85F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93478F501E7D79730031C85F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93478F541E7D79730031C85F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93478F551E7D79730031C85F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93478F581E7D79730031C85F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		93478F591E7D79730031C85F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93478F5B1E7D79730031C85F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95E54E91F1CD9704426AEAF1 /* Pods-Quiz5CarlosSolano.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Quiz5CarlosSolano/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.news.Quiz5CarlosSolano;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		93478F5C1E7D79730031C85F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD0AD750DD1D7616B8BFE8D /* Pods-Quiz5CarlosSolano.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Quiz5CarlosSolano/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.news.Quiz5CarlosSolano;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		93478F621E7D7D720031C85F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		93478F631E7D7D720031C85F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93478F3E1E7D79730031C85F /* Build configuration list for PBXProject "Quiz5CarlosSolano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93478F581E7D79730031C85F /* Debug */,
+				93478F591E7D79730031C85F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93478F5A1E7D79730031C85F /* Build configuration list for PBXNativeTarget "Quiz5CarlosSolano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93478F5B1E7D79730031C85F /* Debug */,
+				93478F5C1E7D79730031C85F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93478F641E7D7D720031C85F /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93478F621E7D7D720031C85F /* Debug */,
+				93478F631E7D7D720031C85F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		93478F5E1E7D7BE50031C85F /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93478F5F1E7D7BE50031C85F /* Model.xcdatamodel */,
+			);
+			currentVersion = 93478F5F1E7D7BE50031C85F /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 93478F3B1E7D79730031C85F /* Project object */;
+}
