@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Add Item";
     [self addSaveButtonNavegationController];
     // Do any additional setup after loading the view.
 }
