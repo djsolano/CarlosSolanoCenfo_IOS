@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-@class News;
+@class CDNews;
 
 @interface NewsTableViewCell : UITableViewCell
--(void) setupCellWithNews: (News *)news;
+-(void) setupCellWithNews: (CDNews *)news;
 @end

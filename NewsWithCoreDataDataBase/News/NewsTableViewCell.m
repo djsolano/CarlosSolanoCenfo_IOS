@@ -8,6 +8,7 @@
 
 #import "NewsTableViewCell.h"
 //#import "News.h"
+#import "CDNews.h"
 
 @interface NewsTableViewCell ()
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
@@ -28,8 +29,8 @@
     // Configure the view for the selected state
 }
 
--(void) setupCellWithNews: (News *)news{
-//    self.titleLabel.text = news.title;
+-(void) setupCellWithNews: (CDNews *)news{
+    self.titleLabel.text = news.newsTitle;
     NSString *dateString = [NSDateFormatter localizedStringFromDate:[NSDate date]
                                                           dateStyle:NSDateFormatterShortStyle
                                                           timeStyle:NSDateFormatterShortStyle];

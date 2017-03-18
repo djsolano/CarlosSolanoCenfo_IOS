@@ -43,9 +43,31 @@
 }
 
 +(NSArray*)getNewsWithCategoryName:(NSString*) name{
-    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"name = %@",name];
-    CDCategory * category = [CDCategory MR_findFirstWithPredicate:predicate];
+    CDCategory * category = [CoreDataManager getCategoryWithName:name];
+    if(category){
     return [category.news allObjects];
+    }
+    return nil;
+}
+
++(CDCategory *) getCategoryWithName:(NSString*) name{
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"name = %@",name];
+    NSArray * result = [CDCategory MR_findAllWithPredicate:predicate];
+    if(result.count > 0){
+        return result.firstObject;//CDCategory * category = [CDCategory MR_findFirstWithPredicate:predicate];
+    }
+    return nil;
+}
+
++(void) insertNewsWithTitle:(NSString *) title newsDescription:(NSString*) newsDescription categoryName:(NSString *) categoryName{
+    CDNews * news = [CDNews MR_createEntity];
+    news.newsTitle = title;
+    news.newsDescription = newsDescription;
+    news.date = [NSDate date];
+    CDCategory * category = [CoreDataManager getCategoryWithName:categoryName];
+    [category.newsSet addObject:news];
+    [CoreDataManager saveContext];
+    
 }
 
 @end

@@ -44,8 +44,8 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NewsViewController *newsViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"NewsViewController"];
-    Category * categorySelected = self.categoryArray[indexPath.row];
-    newsViewController.categorySelected = categorySelected;
+    CDCategory * categorySelected = self.categoryArray[indexPath.row];
+    newsViewController.categorySelected = categorySelected.name;
     [self.navigationController pushViewController:newsViewController animated:true];
 }
 

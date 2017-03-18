@@ -17,6 +17,7 @@
 
 @interface NewsViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSArray * news;
 
 @end
 
@@ -32,6 +33,7 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.news = [CoreDataManager getNewsWithCategoryName:self.categorySelected];
     [self.tableView reloadData];
 }
 
@@ -41,14 +43,15 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-//    return self.categorySelected.newsArray.count;
-    return 0;
+    return self.news.count;
+    //return 0;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NewsTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:[NewsTableViewCell getClassName]];
+    CDNews * news = self.news[indexPath.row];
 //    News * news = self.categorySelected.newsArray[indexPath.row];
-//    [cell setupCellWithNews:news];
+  [cell setupCellWithNews:news];
     return cell;
 }
 
@@ -59,7 +62,7 @@
 
 -(void) addNewsAction{
     NewsDetailTableViewController *newsDetailTableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"NewsDetailTableViewController"];
-    //newsDetailTableViewController.categorySelected = self.categorySelected;
+    newsDetailTableViewController.categoryName = self.categorySelected;
     [self.navigationController pushViewController:newsDetailTableViewController animated:true];
 }
 

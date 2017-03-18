@@ -10,5 +10,5 @@
 @class Category;
 
 @interface NewsDetailTableViewController : UITableViewController
-@property(strong,nonatomic) Category * categorySelected;
+@property(strong,nonatomic) NSString * categoryName;
 @end

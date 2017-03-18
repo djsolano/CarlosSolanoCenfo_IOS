@@ -7,6 +7,8 @@
 //
 
 #import "NewsDetailTableViewController.h"
+#import "CDNews.h"
+#import "CoreDataManager.h"
 //#import "News.h"
 //#import "Category.h"
 
@@ -31,6 +33,7 @@
 }
 
 -(void)saveNews{
+    [CoreDataManager insertNewsWithTitle:self.newsTitle.text newsDescription:self.newsDescription.text categoryName:self.categoryName];
 //    News *news = [[News alloc] initWithTitle:self.newsTitle.text newsDescription:self.newsDescription.text date:[NSDate date]];
 //    [self.categorySelected.newsArray addObject:news];
     [self.navigationController popViewControllerAnimated:true];
