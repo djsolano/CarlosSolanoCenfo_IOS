@@ -6,8 +6,25 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		CB04428F1E7F7DA200B2C045 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CB0442921E7F7DA200B2C045 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				CB0442931E7F7DC300B2C045 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		3D55218C43FB6B4D8438C54C /* libPods-Tarea4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F18B99C979520D5BA866C403 /* libPods-Tarea4.a */; };
+		CB0442981E7F7F7F00B2C045 /* CDDog.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0442971E7F7F7F00B2C045 /* CDDog.m */; };
+		CB04429B1E7F7F8B00B2C045 /* _CDDog.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04429A1E7F7F8B00B2C045 /* _CDDog.m */; };
+		CB04429F1E7F818300B2C045 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04429E1E7F818300B2C045 /* CoreDataManager.m */; };
 		CB0A14201E7B423500B73686 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB0A141E1E7B423500B73686 /* Model.xcdatamodeld */; };
 		CBEA097A1E66277B0014EA4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA09791E66277B0014EA4D /* main.m */; };
 		CBEA097D1E66277B0014EA4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEA097C1E66277B0014EA4D /* AppDelegate.m */; };
@@ -24,6 +41,12 @@
 /* Begin PBXFileReference section */
 		7AD5F067A7355047641F5174 /* Pods-Tarea4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tarea4.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tarea4/Pods-Tarea4.release.xcconfig"; sourceTree = "<group>"; };
 		9B794EB2CDD8E7702C03D1CE /* Pods-Tarea4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tarea4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tarea4/Pods-Tarea4.debug.xcconfig"; sourceTree = "<group>"; };
+		CB0442961E7F7F7F00B2C045 /* CDDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDDog.h; path = "Mogenerator-CoreData/CDDog.h"; sourceTree = "<group>"; };
+		CB0442971E7F7F7F00B2C045 /* CDDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDDog.m; path = "Mogenerator-CoreData/CDDog.m"; sourceTree = "<group>"; };
+		CB0442991E7F7F8B00B2C045 /* _CDDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _CDDog.h; path = "Mogenerator-CoreData/_CDDog.h"; sourceTree = "<group>"; };
+		CB04429A1E7F7F8B00B2C045 /* _CDDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _CDDog.m; path = "Mogenerator-CoreData/_CDDog.m"; sourceTree = "<group>"; };
+		CB04429D1E7F818300B2C045 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		CB04429E1E7F818300B2C045 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		CB0A141F1E7B423500B73686 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		CBEA09751E66277B0014EA4D /* Tarea4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tarea4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEA09791E66277B0014EA4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,9 +97,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB0442941E7F7F5900B2C045 /* HumanFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CB0442961E7F7F7F00B2C045 /* CDDog.h */,
+				CB0442971E7F7F7F00B2C045 /* CDDog.m */,
+			);
+			name = HumanFiles;
+			sourceTree = "<group>";
+		};
+		CB0442951E7F7F6100B2C045 /* RobotFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CB0442991E7F7F8B00B2C045 /* _CDDog.h */,
+				CB04429A1E7F7F8B00B2C045 /* _CDDog.m */,
+			);
+			name = RobotFiles;
+			sourceTree = "<group>";
+		};
+		CB04429C1E7F815000B2C045 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CB04429D1E7F818300B2C045 /* CoreDataManager.h */,
+				CB04429E1E7F818300B2C045 /* CoreDataManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
 		CB0A141D1E7B41A000B73686 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				CB0442951E7F7F6100B2C045 /* RobotFiles */,
+				CB0442941E7F7F5900B2C045 /* HumanFiles */,
 				CB0A141E1E7B423500B73686 /* Model.xcdatamodeld */,
 			);
 			name = CoreData;
@@ -103,6 +155,7 @@
 		CBEA09771E66277B0014EA4D /* Tarea4 */ = {
 			isa = PBXGroup;
 			children = (
+				CB04429C1E7F815000B2C045 /* Manager */,
 				CB0A141D1E7B41A000B73686 /* CoreData */,
 				CBEA097B1E66277B0014EA4D /* AppDelegate.h */,
 				CBEA097C1E66277B0014EA4D /* AppDelegate.m */,
@@ -164,6 +217,10 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Carlos Solano";
 				TargetAttributes = {
+					CB04428F1E7F7DA200B2C045 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					CBEA09741E66277B0014EA4D = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -184,6 +241,7 @@
 			projectRoot = "";
 			targets = (
 				CBEA09741E66277B0014EA4D /* Tarea4 */,
+				CB04428F1E7F7DA200B2C045 /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +306,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		CB0442931E7F7DC300B2C045 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator --v2 -m Tarea4/Model.xcdatamodeld -O Tarea4/Mogenerator-CoreData --template-var arc=true";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,9 +328,12 @@
 			files = (
 				CBEA09951E662C4F0014EA4D /* DogTableViewCell.m in Sources */,
 				CBEA097D1E66277B0014EA4D /* AppDelegate.m in Sources */,
+				CB04429F1E7F818300B2C045 /* CoreDataManager.m in Sources */,
 				CBEA09911E6628560014EA4D /* Dog.m in Sources */,
+				CB0442981E7F7F7F00B2C045 /* CDDog.m in Sources */,
 				CB0A14201E7B423500B73686 /* Model.xcdatamodeld in Sources */,
 				CBEA09991E6637620014EA4D /* DogsTableViewController.m in Sources */,
+				CB04429B1E7F7F8B00B2C045 /* _CDDog.m in Sources */,
 				CBEA097A1E66277B0014EA4D /* main.m in Sources */,
 				CBF2B8801E68DB1E00C806B7 /* DogDetailTableViewController.m in Sources */,
 			);
@@ -287,6 +361,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CB0442901E7F7DA200B2C045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB0442911E7F7DA200B2C045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		CBEA098A1E66277B0014EA4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,6 +490,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CB0442921E7F7DA200B2C045 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB0442901E7F7DA200B2C045 /* Debug */,
+				CB0442911E7F7DA200B2C045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CBEA09701E66277B0014EA4D /* Build configuration list for PBXProject "Tarea4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

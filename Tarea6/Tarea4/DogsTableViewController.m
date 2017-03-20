@@ -8,8 +8,9 @@
 
 #import "DogsTableViewController.h"
 #import "DogTableViewCell.h"
-#import "Dog.h"
+#import "CDDog.h"
 #import "DogDetailTableViewController.h"
+#import "CoreDataManager.h"
 
 @interface DogsTableViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -52,19 +53,7 @@
 }
 
 -(void) loadData{
-    
-    Dog * dog0 = [[Dog alloc]initDogWithName:@"Fido" image:@"Fido" color:@"Negro" location:@"Heredia" age:[NSNumber numberWithFloat:1.5] contactInformation:@"88112233"];
-    Dog * dog1 = [[Dog alloc]initDogWithName:@"Kami" image:@"Kami" color:@"Blanco" location:@"San Jose" age:[NSNumber numberWithFloat:2.5] contactInformation:@"dosg@mail.com"];
-    Dog * dog2 = [[Dog alloc]initDogWithName:@"Roy" image:@"Roy" color:@"Café" location:@"Alajuela" age:[NSNumber numberWithFloat:4.5] contactInformation:@"88114433"];
-    Dog * dog3 = [[Dog alloc]initDogWithName:@"Terror" image:@"Terror" color:@"Negro y Blanco" location:@"Cartago" age:[NSNumber numberWithFloat:1.0] contactInformation:@"88112255"];
-    Dog * dog4 = [[Dog alloc]initDogWithName:@"Flor" image:@"Flor" color:@"Cafè" location:@"Puntarenas" age:[NSNumber numberWithFloat:2.0] contactInformation:@"albergue@mail.com"];
-    Dog * dog5 = [[Dog alloc]initDogWithName:@"Samurai" image:@"Samurai" color:@"Negro" location:@"San Jose" age:[NSNumber numberWithFloat:5] contactInformation:@"77112233"];
-    Dog * dog6 = [[Dog alloc]initDogWithName:@"Bob" image:@"Bob" color:@"Blanco" location:@"Limon" age:[NSNumber numberWithFloat:2] contactInformation:@"87892233"];
-    Dog * dog7 = [[Dog alloc]initDogWithName:@"Firulai" image:@"Firulai" color:@"Dorado" location:@"Heredia" age:[NSNumber numberWithFloat:10.5] contactInformation:@"firu@mail.com"];
-    Dog * dog8 = [[Dog alloc]initDogWithName:@"Doggy" image:@"Doggy" color:@"Negro" location:@"Alajuela" age:[NSNumber numberWithFloat:1.5] contactInformation:@"22112233"];
-    Dog * dog9 = [[Dog alloc]initDogWithName:@"Liza" image:@"Liza" color:@"Negro" location:@"Heredia" age:[NSNumber numberWithFloat:0.5] contactInformation:@"55332233"];
-
-    self.dogsArray = [NSArray arrayWithObjects:dog0,dog1,dog2,dog3,dog4,dog5,dog6,dog7,dog8,dog9, nil];
+    self.dogsArray = [CoreDataManager getAllDogs];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

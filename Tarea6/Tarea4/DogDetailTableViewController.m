@@ -7,7 +7,7 @@
 //
 
 #import "DogDetailTableViewController.h"
-#import "Dog.h"
+#import "CDDog.h"
 
 @interface DogDetailTableViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *dogImageView;
@@ -34,7 +34,7 @@
     self.nameLabel.text =[NSString stringWithFormat:@"Name: %@",self.selectedDog.name] ;
     self.colorLabel.text =[NSString stringWithFormat:@"Color: %@",self.selectedDog.color];
     self.locationLabel.text =[NSString stringWithFormat:@"Location: %@",self.selectedDog.location];
-    self.ageLabel.text =[NSString stringWithFormat:@"Age: %d",[self.selectedDog.age intValue]] ;
+    self.ageLabel.text =[NSString stringWithFormat:@"Age: %@",self.selectedDog.age] ;
     self.contactLabel.text =[NSString stringWithFormat:@"Contact: %@",self.selectedDog.contactInformation];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

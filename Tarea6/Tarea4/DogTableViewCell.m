@@ -7,7 +7,7 @@
 //
 
 #import "DogTableViewCell.h"
-#import "Dog.h"
+#import "CDDog.h"
 
 @interface DogTableViewCell ()
 @property (weak, nonatomic) IBOutlet UILabel *dogName;
@@ -28,7 +28,7 @@
     // Configure the view for the selected state
 }
 
--(void) initializeCellWithDog: (Dog *) dog {
+-(void) initializeCellWithDog: (CDDog *) dog {
     self.dogName.text = dog.name;
     self.dogImage.image = [UIImage imageNamed:dog.image];
 }

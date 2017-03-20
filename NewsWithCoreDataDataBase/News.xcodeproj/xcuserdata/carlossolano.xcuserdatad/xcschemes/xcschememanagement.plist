@@ -7,9 +7,9 @@
 		<key>Mogenerator.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
-		<key>Tarea4.xcscheme</key>
+		<key>News.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>CB04428F1E7F7DA200B2C045</key>
+		<key>930F2A3C1E745423002238CB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CBEA09741E66277B0014EA4D</key>
+		<key>931E38531E589EA600A5473B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-@class Dog;
+@class CDDog;
 
 @interface DogTableViewCell : UITableViewCell
--(void) initializeCellWithDog: (Dog *) dog ;
+-(void) initializeCellWithDog: (CDDog *) dog ;
 +(NSString *) getIdentifier;
 @end
