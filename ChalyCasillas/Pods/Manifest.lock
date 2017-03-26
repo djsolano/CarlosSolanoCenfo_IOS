@@ -1,0 +1,12 @@
+PODS:
+  - LMSideBarController (1.0.1)
+
+DEPENDENCIES:
+  - LMSideBarController
+
+SPEC CHECKSUMS:
+  LMSideBarController: bfbe56b30c76a541918b4c3f8972f64a49b295a1
+
+PODFILE CHECKSUM: 0782c03231cbf13f0f0c3a547c1c15cbb3e7ea53
+
+COCOAPODS: 1.2.0

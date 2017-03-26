@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07F317F5A7EF505FECA1FFF46D910B16 /* UIViewController+LMSideBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8625952ACFC618C87E3F66431E4867 /* UIViewController+LMSideBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B8C7738FC470ECE49265E594D098BCD /* Pods-ChalyCasillas-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B45286B748332A7676698475717A0B0 /* Pods-ChalyCasillas-dummy.m */; };
+		1697BC6848DDDE3A03E776744A493477 /* UIViewController+LMSideBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304F65D328FCA51C4E68D1988AE7C786 /* UIViewController+LMSideBarController.m */; };
+		2034D23E6961825FE4C99681F6E2EC02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		369D035E723A59F2C6F21DBD780A3EC6 /* LMSideBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 97C7DD8BB81C71A054F18811E79BF108 /* LMSideBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4488BFBCA9C3C43DF0075550C6FA5572 /* LMSideBarStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8164A9B822C346F00C074BB5DF900E6D /* LMSideBarStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56DEC83258006D0FD79EE2191D0404EE /* UIImage+LMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB53F5B94644A6CE323FCC4A5D46134 /* UIImage+LMExtension.m */; };
+		899A38D201CC1B67C4808FD7E8B0FC65 /* LMSideBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E0A1B2129F7789D7F2022EBA70FC74 /* LMSideBarController.m */; };
+		9D701DFFCDBD163C83D2291940F1F5D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C0FE8A5BE3B79AA343AB8282882A8743 /* LMSideBarDepthStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0F4F89C54DDBC864E73C7211AFD10B /* LMSideBarDepthStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C999280D597656759ACFB438725942AB /* LMSideBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB362AFD878A196DD42BF0A59EE446 /* LMSideBarController-dummy.m */; };
+		D5048E4A78686783E6419835798D76AE /* LMSideBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = E314A36226EA6BF697F6B170B3FC60B4 /* LMSideBarStyle.m */; };
+		E5FC40A03C1DEE22065D8B32BC266A5A /* LMSideBarDepthStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6D8BA54F6DB14B448BB1D20E75FF81 /* LMSideBarDepthStyle.m */; };
+		FC9B717D0A001B41180379717E458BC4 /* UIImage+LMExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BE4B159AE782D5693F9CD5C6E267B5F /* UIImage+LMExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F560407E1B5935F01C0903CC076089B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 233D1657FDB4F70BD92D819250ECD05F;
+			remoteInfo = LMSideBarController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BE4B159AE782D5693F9CD5C6E267B5F /* UIImage+LMExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+LMExtension.h"; path = "LMSideBarController/Vender/UIImage+LMExtension.h"; sourceTree = "<group>"; };
+		0F6D8BA54F6DB14B448BB1D20E75FF81 /* LMSideBarDepthStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMSideBarDepthStyle.m; path = LMSideBarController/LMSideBarStyles/LMSideBarDepthStyle.m; sourceTree = "<group>"; };
+		120609EF1F9163EF9406FE4D1B567F37 /* LMSideBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LMSideBarController.xcconfig; sourceTree = "<group>"; };
+		304F65D328FCA51C4E68D1988AE7C786 /* UIViewController+LMSideBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+LMSideBarController.m"; path = "LMSideBarController/UIViewController+LMSideBarController.m"; sourceTree = "<group>"; };
+		3483BAD18F7BAAD15E64260669CE58DF /* Pods-ChalyCasillas-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChalyCasillas-frameworks.sh"; sourceTree = "<group>"; };
+		3B45286B748332A7676698475717A0B0 /* Pods-ChalyCasillas-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChalyCasillas-dummy.m"; sourceTree = "<group>"; };
+		80E0A1B2129F7789D7F2022EBA70FC74 /* LMSideBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMSideBarController.m; path = LMSideBarController/LMSideBarController.m; sourceTree = "<group>"; };
+		8164A9B822C346F00C074BB5DF900E6D /* LMSideBarStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMSideBarStyle.h; path = LMSideBarController/LMSideBarStyles/LMSideBarStyle.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97C7DD8BB81C71A054F18811E79BF108 /* LMSideBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMSideBarController.h; path = LMSideBarController/LMSideBarController.h; sourceTree = "<group>"; };
+		A234F0737CAD80764C87131BC4D43B39 /* libLMSideBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLMSideBarController.a; path = libLMSideBarController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F09CB2A3E3DD13CD380776F19E6032 /* Pods-ChalyCasillas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChalyCasillas.release.xcconfig"; sourceTree = "<group>"; };
+		BEB53F5B94644A6CE323FCC4A5D46134 /* UIImage+LMExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+LMExtension.m"; path = "LMSideBarController/Vender/UIImage+LMExtension.m"; sourceTree = "<group>"; };
+		C9EB362AFD878A196DD42BF0A59EE446 /* LMSideBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LMSideBarController-dummy.m"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC0F4F89C54DDBC864E73C7211AFD10B /* LMSideBarDepthStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMSideBarDepthStyle.h; path = LMSideBarController/LMSideBarStyles/LMSideBarDepthStyle.h; sourceTree = "<group>"; };
+		CE8625952ACFC618C87E3F66431E4867 /* UIViewController+LMSideBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+LMSideBarController.h"; path = "LMSideBarController/UIViewController+LMSideBarController.h"; sourceTree = "<group>"; };
+		D0C4199C3B8D5720660A138C204B2AED /* Pods-ChalyCasillas-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChalyCasillas-acknowledgements.plist"; sourceTree = "<group>"; };
+		D4E3DFCF683B972D9E159863459A5797 /* Pods-ChalyCasillas-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChalyCasillas-resources.sh"; sourceTree = "<group>"; };
+		E314A36226EA6BF697F6B170B3FC60B4 /* LMSideBarStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMSideBarStyle.m; path = LMSideBarController/LMSideBarStyles/LMSideBarStyle.m; sourceTree = "<group>"; };
+		E97B736C4260FDB521377AC911797B6D /* Pods-ChalyCasillas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChalyCasillas.debug.xcconfig"; sourceTree = "<group>"; };
+		E982B33AB9B6518D6073B40A1911E1D3 /* libPods-ChalyCasillas.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ChalyCasillas.a"; path = "libPods-ChalyCasillas.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7F5BF8E6086E98DCEE181E1B2A9F6B /* Pods-ChalyCasillas-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChalyCasillas-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FC1482839687CDEABB03D00E539C5272 /* LMSideBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LMSideBarController-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F471164DF3A97E7BD699F1EB81A07C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2034D23E6961825FE4C99681F6E2EC02 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF81E7D29D9FE3CFDE5D41FF4D87EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D701DFFCDBD163C83D2291940F1F5D6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D3A295509F77D6EA3BFBA7EC4FC7A64 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A1EFD974066A4632B415E489F773845 /* Pods-ChalyCasillas */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3479120788104E2E91BF4E68CC9C5CB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A234F0737CAD80764C87131BC4D43B39 /* libLMSideBarController.a */,
+				E982B33AB9B6518D6073B40A1911E1D3 /* libPods-ChalyCasillas.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3750BD516B93704A289117AE8177445A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89B838086D4829C80DE06F73E6B51FBF /* LMSideBarController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7A1EFD974066A4632B415E489F773845 /* Pods-ChalyCasillas */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F5BF8E6086E98DCEE181E1B2A9F6B /* Pods-ChalyCasillas-acknowledgements.markdown */,
+				D0C4199C3B8D5720660A138C204B2AED /* Pods-ChalyCasillas-acknowledgements.plist */,
+				3B45286B748332A7676698475717A0B0 /* Pods-ChalyCasillas-dummy.m */,
+				3483BAD18F7BAAD15E64260669CE58DF /* Pods-ChalyCasillas-frameworks.sh */,
+				D4E3DFCF683B972D9E159863459A5797 /* Pods-ChalyCasillas-resources.sh */,
+				E97B736C4260FDB521377AC911797B6D /* Pods-ChalyCasillas.debug.xcconfig */,
+				A6F09CB2A3E3DD13CD380776F19E6032 /* Pods-ChalyCasillas.release.xcconfig */,
+			);
+			name = "Pods-ChalyCasillas";
+			path = "Target Support Files/Pods-ChalyCasillas";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				3750BD516B93704A289117AE8177445A /* Pods */,
+				3479120788104E2E91BF4E68CC9C5CB6 /* Products */,
+				1D3A295509F77D6EA3BFBA7EC4FC7A64 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		89B838086D4829C80DE06F73E6B51FBF /* LMSideBarController */ = {
+			isa = PBXGroup;
+			children = (
+				97C7DD8BB81C71A054F18811E79BF108 /* LMSideBarController.h */,
+				80E0A1B2129F7789D7F2022EBA70FC74 /* LMSideBarController.m */,
+				CC0F4F89C54DDBC864E73C7211AFD10B /* LMSideBarDepthStyle.h */,
+				0F6D8BA54F6DB14B448BB1D20E75FF81 /* LMSideBarDepthStyle.m */,
+				8164A9B822C346F00C074BB5DF900E6D /* LMSideBarStyle.h */,
+				E314A36226EA6BF697F6B170B3FC60B4 /* LMSideBarStyle.m */,
+				0BE4B159AE782D5693F9CD5C6E267B5F /* UIImage+LMExtension.h */,
+				BEB53F5B94644A6CE323FCC4A5D46134 /* UIImage+LMExtension.m */,
+				CE8625952ACFC618C87E3F66431E4867 /* UIViewController+LMSideBarController.h */,
+				304F65D328FCA51C4E68D1988AE7C786 /* UIViewController+LMSideBarController.m */,
+				9792A35513F3EE8F3520A3F6933CF226 /* Support Files */,
+			);
+			name = LMSideBarController;
+			path = LMSideBarController;
+			sourceTree = "<group>";
+		};
+		9792A35513F3EE8F3520A3F6933CF226 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				120609EF1F9163EF9406FE4D1B567F37 /* LMSideBarController.xcconfig */,
+				C9EB362AFD878A196DD42BF0A59EE446 /* LMSideBarController-dummy.m */,
+				FC1482839687CDEABB03D00E539C5272 /* LMSideBarController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LMSideBarController";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0B0153BF72162CC9260FA31301D11D27 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369D035E723A59F2C6F21DBD780A3EC6 /* LMSideBarController.h in Headers */,
+				C0FE8A5BE3B79AA343AB8282882A8743 /* LMSideBarDepthStyle.h in Headers */,
+				4488BFBCA9C3C43DF0075550C6FA5572 /* LMSideBarStyle.h in Headers */,
+				FC9B717D0A001B41180379717E458BC4 /* UIImage+LMExtension.h in Headers */,
+				07F317F5A7EF505FECA1FFF46D910B16 /* UIViewController+LMSideBarController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		233D1657FDB4F70BD92D819250ECD05F /* LMSideBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60ED4CED88E11E9339CC4EE929264F85 /* Build configuration list for PBXNativeTarget "LMSideBarController" */;
+			buildPhases = (
+				A11110C04A969DCD4099BA1F00FAD35B /* Sources */,
+				9F471164DF3A97E7BD699F1EB81A07C8 /* Frameworks */,
+				0B0153BF72162CC9260FA31301D11D27 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LMSideBarController;
+			productName = LMSideBarController;
+			productReference = A234F0737CAD80764C87131BC4D43B39 /* libLMSideBarController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		397F80D92D90BBF2189E12BF01083A21 /* Pods-ChalyCasillas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E42A8AB838AF2BC8943188928400A67 /* Build configuration list for PBXNativeTarget "Pods-ChalyCasillas" */;
+			buildPhases = (
+				D133AF46817BED0E3C274A5782EBC6CD /* Sources */,
+				EFF81E7D29D9FE3CFDE5D41FF4D87EDE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EDD3C42EAB70A2A1B78C0380E3A5947 /* PBXTargetDependency */,
+			);
+			name = "Pods-ChalyCasillas";
+			productName = "Pods-ChalyCasillas";
+			productReference = E982B33AB9B6518D6073B40A1911E1D3 /* libPods-ChalyCasillas.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3479120788104E2E91BF4E68CC9C5CB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				233D1657FDB4F70BD92D819250ECD05F /* LMSideBarController */,
+				397F80D92D90BBF2189E12BF01083A21 /* Pods-ChalyCasillas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A11110C04A969DCD4099BA1F00FAD35B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C999280D597656759ACFB438725942AB /* LMSideBarController-dummy.m in Sources */,
+				899A38D201CC1B67C4808FD7E8B0FC65 /* LMSideBarController.m in Sources */,
+				E5FC40A03C1DEE22065D8B32BC266A5A /* LMSideBarDepthStyle.m in Sources */,
+				D5048E4A78686783E6419835798D76AE /* LMSideBarStyle.m in Sources */,
+				56DEC83258006D0FD79EE2191D0404EE /* UIImage+LMExtension.m in Sources */,
+				1697BC6848DDDE3A03E776744A493477 /* UIViewController+LMSideBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D133AF46817BED0E3C274A5782EBC6CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8C7738FC470ECE49265E594D098BCD /* Pods-ChalyCasillas-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EDD3C42EAB70A2A1B78C0380E3A5947 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LMSideBarController;
+			target = 233D1657FDB4F70BD92D819250ECD05F /* LMSideBarController */;
+			targetProxy = 4F560407E1B5935F01C0903CC076089B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14021561171BA70C37278BDF73102488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 120609EF1F9163EF9406FE4D1B567F37 /* LMSideBarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LMSideBarController/LMSideBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5000A8127BF1DEBDBD607E81CE5E0BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6F09CB2A3E3DD13CD380776F19E6032 /* Pods-ChalyCasillas.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C7A771205F68819400341AF4AAB5A4D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 120609EF1F9163EF9406FE4D1B567F37 /* LMSideBarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LMSideBarController/LMSideBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F596562729DD0E5EE504F39E9BD11ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E97B736C4260FDB521377AC911797B6D /* Pods-ChalyCasillas.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60ED4CED88E11E9339CC4EE929264F85 /* Build configuration list for PBXNativeTarget "LMSideBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7A771205F68819400341AF4AAB5A4D6 /* Debug */,
+				14021561171BA70C37278BDF73102488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E42A8AB838AF2BC8943188928400A67 /* Build configuration list for PBXNativeTarget "Pods-ChalyCasillas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F596562729DD0E5EE504F39E9BD11ADD /* Debug */,
+				A5000A8127BF1DEBDBD607E81CE5E0BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

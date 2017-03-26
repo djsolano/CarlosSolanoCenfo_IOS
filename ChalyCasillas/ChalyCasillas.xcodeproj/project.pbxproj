@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB42D52D1E87698B002B5F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D52C1E87698B002B5F3C /* main.m */; };
+		CB42D5301E87698B002B5F3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D52F1E87698B002B5F3C /* AppDelegate.m */; };
+		CB42D5361E87698B002B5F3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB42D5341E87698B002B5F3C /* Main.storyboard */; };
+		CB42D5381E87698B002B5F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB42D5371E87698B002B5F3C /* Assets.xcassets */; };
+		CB42D53B1E87698B002B5F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB42D5391E87698B002B5F3C /* LaunchScreen.storyboard */; };
+		CB42D5451E87822F002B5F3C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D5441E87822F002B5F3C /* HomeViewController.m */; };
+		CB42D5481E8782CB002B5F3C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D5471E8782CB002B5F3C /* RootViewController.m */; };
+		CB42D54B1E878A0E002B5F3C /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D54A1E878A0E002B5F3C /* MainNavigationController.m */; };
+		CB42D54F1E878A60002B5F3C /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D54E1E878A60002B5F3C /* ProductListViewController.m */; };
+		CB42D5521E8792B4002B5F3C /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D5511E8792B4002B5F3C /* LeftMenuViewController.m */; };
+		F755AFE4355C6A31C6DF9F84 /* libPods-ChalyCasillas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94417D94D80CA0C28DD097F3 /* libPods-ChalyCasillas.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B5D5A036324EE971726DAE6 /* Pods-ChalyCasillas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChalyCasillas.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChalyCasillas/Pods-ChalyCasillas.release.xcconfig"; sourceTree = "<group>"; };
+		94417D94D80CA0C28DD097F3 /* libPods-ChalyCasillas.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChalyCasillas.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB42D5281E87698B002B5F3C /* ChalyCasillas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChalyCasillas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB42D52C1E87698B002B5F3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB42D52E1E87698B002B5F3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB42D52F1E87698B002B5F3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB42D5351E87698B002B5F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB42D5371E87698B002B5F3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB42D53A1E87698B002B5F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB42D53C1E87698B002B5F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB42D5431E87822F002B5F3C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		CB42D5441E87822F002B5F3C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		CB42D5461E8782CB002B5F3C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		CB42D5471E8782CB002B5F3C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		CB42D5491E878A0E002B5F3C /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
+		CB42D54A1E878A0E002B5F3C /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
+		CB42D54D1E878A60002B5F3C /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
+		CB42D54E1E878A60002B5F3C /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
+		CB42D5501E8792B4002B5F3C /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
+		CB42D5511E8792B4002B5F3C /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		D805C1E60CC9DBA315AF917F /* Pods-ChalyCasillas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChalyCasillas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChalyCasillas/Pods-ChalyCasillas.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB42D5251E87698B002B5F3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F755AFE4355C6A31C6DF9F84 /* libPods-ChalyCasillas.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		571DA9E2011EDC9A5C696AF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D805C1E60CC9DBA315AF917F /* Pods-ChalyCasillas.debug.xcconfig */,
+				3B5D5A036324EE971726DAE6 /* Pods-ChalyCasillas.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7727A32CFFE579A4DA218CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94417D94D80CA0C28DD097F3 /* libPods-ChalyCasillas.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB42D51F1E87698B002B5F3C = {
+			isa = PBXGroup;
+			children = (
+				CB42D52A1E87698B002B5F3C /* ChalyCasillas */,
+				CB42D5291E87698B002B5F3C /* Products */,
+				571DA9E2011EDC9A5C696AF4 /* Pods */,
+				B7727A32CFFE579A4DA218CA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB42D5291E87698B002B5F3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB42D5281E87698B002B5F3C /* ChalyCasillas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB42D52A1E87698B002B5F3C /* ChalyCasillas */ = {
+			isa = PBXGroup;
+			children = (
+				CB42D54C1E878A31002B5F3C /* ProductsScene */,
+				CB42D5421E87818C002B5F3C /* HomeScene */,
+				CB42D52E1E87698B002B5F3C /* AppDelegate.h */,
+				CB42D52F1E87698B002B5F3C /* AppDelegate.m */,
+				CB42D5341E87698B002B5F3C /* Main.storyboard */,
+				CB42D5371E87698B002B5F3C /* Assets.xcassets */,
+				CB42D5391E87698B002B5F3C /* LaunchScreen.storyboard */,
+				CB42D53C1E87698B002B5F3C /* Info.plist */,
+				CB42D52B1E87698B002B5F3C /* Supporting Files */,
+				CB42D5461E8782CB002B5F3C /* RootViewController.h */,
+				CB42D5471E8782CB002B5F3C /* RootViewController.m */,
+				CB42D5491E878A0E002B5F3C /* MainNavigationController.h */,
+				CB42D54A1E878A0E002B5F3C /* MainNavigationController.m */,
+				CB42D5501E8792B4002B5F3C /* LeftMenuViewController.h */,
+				CB42D5511E8792B4002B5F3C /* LeftMenuViewController.m */,
+			);
+			path = ChalyCasillas;
+			sourceTree = "<group>";
+		};
+		CB42D52B1E87698B002B5F3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB42D52C1E87698B002B5F3C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB42D5421E87818C002B5F3C /* HomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				CB42D5431E87822F002B5F3C /* HomeViewController.h */,
+				CB42D5441E87822F002B5F3C /* HomeViewController.m */,
+			);
+			name = HomeScene;
+			sourceTree = "<group>";
+		};
+		CB42D54C1E878A31002B5F3C /* ProductsScene */ = {
+			isa = PBXGroup;
+			children = (
+				CB42D54D1E878A60002B5F3C /* ProductListViewController.h */,
+				CB42D54E1E878A60002B5F3C /* ProductListViewController.m */,
+			);
+			name = ProductsScene;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB42D5271E87698B002B5F3C /* ChalyCasillas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB42D53F1E87698B002B5F3C /* Build configuration list for PBXNativeTarget "ChalyCasillas" */;
+			buildPhases = (
+				4BCB8580CFF7B462FD68FBA3 /* [CP] Check Pods Manifest.lock */,
+				CB42D5241E87698B002B5F3C /* Sources */,
+				CB42D5251E87698B002B5F3C /* Frameworks */,
+				CB42D5261E87698B002B5F3C /* Resources */,
+				3F448EE43A63334D38052497 /* [CP] Embed Pods Frameworks */,
+				5AA655191613EB3D024411F1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChalyCasillas;
+			productName = ChalyCasillas;
+			productReference = CB42D5281E87698B002B5F3C /* ChalyCasillas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB42D5201E87698B002B5F3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Carlos Solano";
+				TargetAttributes = {
+					CB42D5271E87698B002B5F3C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CB42D5231E87698B002B5F3C /* Build configuration list for PBXProject "ChalyCasillas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB42D51F1E87698B002B5F3C;
+			productRefGroup = CB42D5291E87698B002B5F3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB42D5271E87698B002B5F3C /* ChalyCasillas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB42D5261E87698B002B5F3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB42D53B1E87698B002B5F3C /* LaunchScreen.storyboard in Resources */,
+				CB42D5381E87698B002B5F3C /* Assets.xcassets in Resources */,
+				CB42D5361E87698B002B5F3C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F448EE43A63334D38052497 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChalyCasillas/Pods-ChalyCasillas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BCB8580CFF7B462FD68FBA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5AA655191613EB3D024411F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChalyCasillas/Pods-ChalyCasillas-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB42D5241E87698B002B5F3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB42D54F1E878A60002B5F3C /* ProductListViewController.m in Sources */,
+				CB42D5301E87698B002B5F3C /* AppDelegate.m in Sources */,
+				CB42D52D1E87698B002B5F3C /* main.m in Sources */,
+				CB42D5481E8782CB002B5F3C /* RootViewController.m in Sources */,
+				CB42D5521E8792B4002B5F3C /* LeftMenuViewController.m in Sources */,
+				CB42D5451E87822F002B5F3C /* HomeViewController.m in Sources */,
+				CB42D54B1E878A0E002B5F3C /* MainNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB42D5341E87698B002B5F3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB42D5351E87698B002B5F3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB42D5391E87698B002B5F3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB42D53A1E87698B002B5F3C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB42D53D1E87698B002B5F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB42D53E1E87698B002B5F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB42D5401E87698B002B5F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D805C1E60CC9DBA315AF917F /* Pods-ChalyCasillas.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChalyCasillas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.courier.ChalyCasillas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB42D5411E87698B002B5F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5D5A036324EE971726DAE6 /* Pods-ChalyCasillas.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChalyCasillas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.courier.ChalyCasillas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB42D5231E87698B002B5F3C /* Build configuration list for PBXProject "ChalyCasillas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB42D53D1E87698B002B5F3C /* Debug */,
+				CB42D53E1E87698B002B5F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB42D53F1E87698B002B5F3C /* Build configuration list for PBXNativeTarget "ChalyCasillas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB42D5401E87698B002B5F3C /* Debug */,
+				CB42D5411E87698B002B5F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB42D5201E87698B002B5F3C /* Project object */;
+}
