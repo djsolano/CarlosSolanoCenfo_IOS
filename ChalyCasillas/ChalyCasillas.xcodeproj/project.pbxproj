@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB2B08211E88B39C00292DB3 /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2B081F1E88B39C00292DB3 /* ProductTableViewCell.m */; };
+		CB2B08221E88B39C00292DB3 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2B08201E88B39C00292DB3 /* ProductTableViewCell.xib */; };
 		CB42D52D1E87698B002B5F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D52C1E87698B002B5F3C /* main.m */; };
 		CB42D5301E87698B002B5F3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D52F1E87698B002B5F3C /* AppDelegate.m */; };
 		CB42D5361E87698B002B5F3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB42D5341E87698B002B5F3C /* Main.storyboard */; };
@@ -17,12 +19,17 @@
 		CB42D54B1E878A0E002B5F3C /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D54A1E878A0E002B5F3C /* MainNavigationController.m */; };
 		CB42D54F1E878A60002B5F3C /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D54E1E878A60002B5F3C /* ProductListViewController.m */; };
 		CB42D5521E8792B4002B5F3C /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D5511E8792B4002B5F3C /* LeftMenuViewController.m */; };
+		CBE61EC01E88D0FA00BC5BAF /* UsersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE61EBF1E88D0FA00BC5BAF /* UsersTableViewController.m */; };
+		CBE61EC31E88DB6D00BC5BAF /* AddUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE61EC21E88DB6D00BC5BAF /* AddUserViewController.m */; };
 		F755AFE4355C6A31C6DF9F84 /* libPods-ChalyCasillas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94417D94D80CA0C28DD097F3 /* libPods-ChalyCasillas.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B5D5A036324EE971726DAE6 /* Pods-ChalyCasillas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChalyCasillas.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChalyCasillas/Pods-ChalyCasillas.release.xcconfig"; sourceTree = "<group>"; };
 		94417D94D80CA0C28DD097F3 /* libPods-ChalyCasillas.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChalyCasillas.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2B081E1E88B39C00292DB3 /* ProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
+		CB2B081F1E88B39C00292DB3 /* ProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTableViewCell.m; sourceTree = "<group>"; };
+		CB2B08201E88B39C00292DB3 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		CB42D5281E87698B002B5F3C /* ChalyCasillas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChalyCasillas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB42D52C1E87698B002B5F3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB42D52E1E87698B002B5F3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,6 +48,10 @@
 		CB42D54E1E878A60002B5F3C /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
 		CB42D5501E8792B4002B5F3C /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
 		CB42D5511E8792B4002B5F3C /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		CBE61EBE1E88D0FA00BC5BAF /* UsersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersTableViewController.h; sourceTree = "<group>"; };
+		CBE61EBF1E88D0FA00BC5BAF /* UsersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersTableViewController.m; sourceTree = "<group>"; };
+		CBE61EC11E88DB6D00BC5BAF /* AddUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddUserViewController.h; sourceTree = "<group>"; };
+		CBE61EC21E88DB6D00BC5BAF /* AddUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddUserViewController.m; sourceTree = "<group>"; };
 		D805C1E60CC9DBA315AF917F /* Pods-ChalyCasillas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChalyCasillas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChalyCasillas/Pods-ChalyCasillas.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +105,7 @@
 		CB42D52A1E87698B002B5F3C /* ChalyCasillas */ = {
 			isa = PBXGroup;
 			children = (
+				CBE61EB81E88CFAF00BC5BAF /* UsersScene */,
 				CB42D54C1E878A31002B5F3C /* ProductsScene */,
 				CB42D5421E87818C002B5F3C /* HomeScene */,
 				CB42D52E1E87698B002B5F3C /* AppDelegate.h */,
@@ -135,8 +147,22 @@
 			children = (
 				CB42D54D1E878A60002B5F3C /* ProductListViewController.h */,
 				CB42D54E1E878A60002B5F3C /* ProductListViewController.m */,
+				CB2B081E1E88B39C00292DB3 /* ProductTableViewCell.h */,
+				CB2B081F1E88B39C00292DB3 /* ProductTableViewCell.m */,
+				CB2B08201E88B39C00292DB3 /* ProductTableViewCell.xib */,
 			);
 			name = ProductsScene;
+			sourceTree = "<group>";
+		};
+		CBE61EB81E88CFAF00BC5BAF /* UsersScene */ = {
+			isa = PBXGroup;
+			children = (
+				CBE61EBE1E88D0FA00BC5BAF /* UsersTableViewController.h */,
+				CBE61EBF1E88D0FA00BC5BAF /* UsersTableViewController.m */,
+				CBE61EC11E88DB6D00BC5BAF /* AddUserViewController.h */,
+				CBE61EC21E88DB6D00BC5BAF /* AddUserViewController.m */,
+			);
+			name = UsersScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB42D53B1E87698B002B5F3C /* LaunchScreen.storyboard in Resources */,
+				CB2B08221E88B39C00292DB3 /* ProductTableViewCell.xib in Resources */,
 				CB42D5381E87698B002B5F3C /* Assets.xcassets in Resources */,
 				CB42D5361E87698B002B5F3C /* Main.storyboard in Resources */,
 			);
@@ -262,10 +289,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB42D54F1E878A60002B5F3C /* ProductListViewController.m in Sources */,
+				CBE61EC31E88DB6D00BC5BAF /* AddUserViewController.m in Sources */,
+				CBE61EC01E88D0FA00BC5BAF /* UsersTableViewController.m in Sources */,
 				CB42D5301E87698B002B5F3C /* AppDelegate.m in Sources */,
 				CB42D52D1E87698B002B5F3C /* main.m in Sources */,
 				CB42D5481E8782CB002B5F3C /* RootViewController.m in Sources */,
 				CB42D5521E8792B4002B5F3C /* LeftMenuViewController.m in Sources */,
+				CB2B08211E88B39C00292DB3 /* ProductTableViewCell.m in Sources */,
 				CB42D5451E87822F002B5F3C /* HomeViewController.m in Sources */,
 				CB42D54B1E878A0E002B5F3C /* MainNavigationController.m in Sources */,
 			);

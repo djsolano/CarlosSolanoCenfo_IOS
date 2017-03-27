@@ -22,12 +22,20 @@
     return _homeViewController;
 }
 
-- (ProductListViewController *)othersViewController
+- (ProductListViewController *)productListViewController
 {
     if (!_productListViewController) {
         _productListViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ProductListViewController"];
     }
     return _productListViewController;
+}
+
+- (UsersTableViewController *)usersTableViewController
+{
+    if (!_usersTableViewController) {
+        _usersTableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"UsersTableViewController"];
+    }
+    return _usersTableViewController;
 }
 
 - (void)showHomeViewController
@@ -37,7 +45,11 @@
 
 - (void)showProductListViewController
 {
-    [self setViewControllers:@[self.othersViewController] animated:YES];
+    [self setViewControllers:@[self.productListViewController] animated:YES];
+}
+
+- (void)showUsersTableViewController{
+    [self setViewControllers:@[self.usersTableViewController] animated:YES];
 }
 
 @end

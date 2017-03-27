@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self addMenuButton];
     // Do any additional setup after loading the view.
 }
 
@@ -27,6 +28,16 @@
 - (IBAction)showMenu:(id)sender {
     [self.sideBarController showMenuViewControllerInDirection:LMSideBarControllerDirectionLeft];
 
+}
+
+-(void) addMenuButton{
+    UIImage *image = [[UIImage imageNamed:@"btn_left_menu"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(menuAction)];
+    self.navigationItem.leftBarButtonItem = addButton;
+}
+
+-(void) menuAction{
+    [self.sideBarController showMenuViewControllerInDirection:LMSideBarControllerDirectionLeft];
 }
 
 /*

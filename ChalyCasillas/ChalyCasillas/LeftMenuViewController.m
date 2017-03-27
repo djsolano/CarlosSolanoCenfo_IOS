@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.menuTitles = @[@"Home", @"Profile", @"Chats", @"Settings", @"About"];
+    self.menuTitles = @[@"Home", @"Products", @"Users"];
     
     self.avatarImageView.clipsToBounds = YES;
     self.avatarImageView.layer.cornerRadius = 50.0;
@@ -69,11 +69,15 @@
     MainNavigationController *mainNavigationController = (MainNavigationController *)self.sideBarController.contentViewController;
     NSString *menuTitle = self.menuTitles[indexPath.row];
     if ([menuTitle isEqualToString:@"Home"]) {
+        mainNavigationController.homeViewController.title = menuTitle;
         [mainNavigationController showHomeViewController];
     }
-    else {
+    else if ([menuTitle isEqualToString:@"Products"]){
         mainNavigationController.productListViewController.title = menuTitle;
         [mainNavigationController showProductListViewController];
+    } else {
+        mainNavigationController.usersTableViewController.title = menuTitle;
+        [mainNavigationController showUsersTableViewController];
     }
     
     [self.sideBarController hideMenuViewController:YES];

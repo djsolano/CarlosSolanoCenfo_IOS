@@ -9,13 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "ProductListViewController.h"
 #import "HomeViewController.h"
+#import "UsersTableViewController.h"
 
 @interface MainNavigationController : UINavigationController
 
 @property (nonatomic, strong) HomeViewController *homeViewController;
 @property (nonatomic, strong) ProductListViewController *productListViewController;
+@property (nonatomic, strong) UsersTableViewController *usersTableViewController;
 
 - (void)showHomeViewController;
 - (void)showProductListViewController;
+- (void)showUsersTableViewController;
 
 @end
