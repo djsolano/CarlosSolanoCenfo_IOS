@@ -1,12 +1,17 @@
 PODS:
   - LMSideBarController (1.0.1)
+  - Realm (2.4.3):
+    - Realm/Headers (= 2.4.3)
+  - Realm/Headers (2.4.3)
 
 DEPENDENCIES:
   - LMSideBarController
+  - Realm
 
 SPEC CHECKSUMS:
   LMSideBarController: bfbe56b30c76a541918b4c3f8972f64a49b295a1
+  Realm: e08d60b0048ccccd3949c8c28a92c4db5712d7e9
 
-PODFILE CHECKSUM: 0782c03231cbf13f0f0c3a547c1c15cbb3e7ea53
+PODFILE CHECKSUM: c517a96c0a796f309411cfdaf9d0be44c9da3f0a
 
 COCOAPODS: 1.2.0

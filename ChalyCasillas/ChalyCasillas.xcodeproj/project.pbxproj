@@ -84,6 +84,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB1F6BF21E8B00AF00D2E682 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBE61EB81E88CFAF00BC5BAF /* UsersScene */,
+				CB42D54C1E878A31002B5F3C /* ProductsScene */,
+				CB42D5421E87818C002B5F3C /* HomeScene */,
+				CB42D5461E8782CB002B5F3C /* RootViewController.h */,
+				CB42D5471E8782CB002B5F3C /* RootViewController.m */,
+				CB42D5491E878A0E002B5F3C /* MainNavigationController.h */,
+				CB42D54A1E878A0E002B5F3C /* MainNavigationController.m */,
+				CB42D5501E8792B4002B5F3C /* LeftMenuViewController.h */,
+				CB42D5511E8792B4002B5F3C /* LeftMenuViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		CB42D51F1E87698B002B5F3C = {
 			isa = PBXGroup;
 			children = (
@@ -105,9 +121,7 @@
 		CB42D52A1E87698B002B5F3C /* ChalyCasillas */ = {
 			isa = PBXGroup;
 			children = (
-				CBE61EB81E88CFAF00BC5BAF /* UsersScene */,
-				CB42D54C1E878A31002B5F3C /* ProductsScene */,
-				CB42D5421E87818C002B5F3C /* HomeScene */,
+				CB1F6BF21E8B00AF00D2E682 /* ViewControllers */,
 				CB42D52E1E87698B002B5F3C /* AppDelegate.h */,
 				CB42D52F1E87698B002B5F3C /* AppDelegate.m */,
 				CB42D5341E87698B002B5F3C /* Main.storyboard */,
@@ -115,12 +129,6 @@
 				CB42D5391E87698B002B5F3C /* LaunchScreen.storyboard */,
 				CB42D53C1E87698B002B5F3C /* Info.plist */,
 				CB42D52B1E87698B002B5F3C /* Supporting Files */,
-				CB42D5461E8782CB002B5F3C /* RootViewController.h */,
-				CB42D5471E8782CB002B5F3C /* RootViewController.m */,
-				CB42D5491E878A0E002B5F3C /* MainNavigationController.h */,
-				CB42D54A1E878A0E002B5F3C /* MainNavigationController.m */,
-				CB42D5501E8792B4002B5F3C /* LeftMenuViewController.h */,
-				CB42D5511E8792B4002B5F3C /* LeftMenuViewController.m */,
 			);
 			path = ChalyCasillas;
 			sourceTree = "<group>";

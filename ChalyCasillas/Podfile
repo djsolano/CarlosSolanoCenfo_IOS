@@ -7,4 +7,5 @@ target 'ChalyCasillas' do
 
   # Pods for ChalyCasillas
   pod 'LMSideBarController'
+  pod 'Realm'
 end
