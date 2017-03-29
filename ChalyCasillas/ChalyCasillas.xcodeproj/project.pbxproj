@@ -21,6 +21,9 @@
 		CB42D5521E8792B4002B5F3C /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D5511E8792B4002B5F3C /* LeftMenuViewController.m */; };
 		CBE61EC01E88D0FA00BC5BAF /* UsersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE61EBF1E88D0FA00BC5BAF /* UsersTableViewController.m */; };
 		CBE61EC31E88DB6D00BC5BAF /* AddUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE61EC21E88DB6D00BC5BAF /* AddUserViewController.m */; };
+		CBE64E9A1E8B651100BAE252 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE64E991E8B651100BAE252 /* User.m */; };
+		CBE64E9D1E8B6F6A00BAE252 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE64E9C1E8B6F6A00BAE252 /* Product.m */; };
+		CBE64EA11E8B794F00BAE252 /* Shipment.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE64EA01E8B794F00BAE252 /* Shipment.m */; };
 		F755AFE4355C6A31C6DF9F84 /* libPods-ChalyCasillas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94417D94D80CA0C28DD097F3 /* libPods-ChalyCasillas.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,12 @@
 		CBE61EBF1E88D0FA00BC5BAF /* UsersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersTableViewController.m; sourceTree = "<group>"; };
 		CBE61EC11E88DB6D00BC5BAF /* AddUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddUserViewController.h; sourceTree = "<group>"; };
 		CBE61EC21E88DB6D00BC5BAF /* AddUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddUserViewController.m; sourceTree = "<group>"; };
+		CBE64E981E8B651100BAE252 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		CBE64E991E8B651100BAE252 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		CBE64E9B1E8B6F6A00BAE252 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		CBE64E9C1E8B6F6A00BAE252 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		CBE64E9F1E8B794F00BAE252 /* Shipment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shipment.h; sourceTree = "<group>"; };
+		CBE64EA01E8B794F00BAE252 /* Shipment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shipment.m; sourceTree = "<group>"; };
 		D805C1E60CC9DBA315AF917F /* Pods-ChalyCasillas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChalyCasillas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChalyCasillas/Pods-ChalyCasillas.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,15 +96,11 @@
 		CB1F6BF21E8B00AF00D2E682 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CBE61EB81E88CFAF00BC5BAF /* UsersScene */,
-				CB42D54C1E878A31002B5F3C /* ProductsScene */,
 				CB42D5421E87818C002B5F3C /* HomeScene */,
-				CB42D5461E8782CB002B5F3C /* RootViewController.h */,
-				CB42D5471E8782CB002B5F3C /* RootViewController.m */,
-				CB42D5491E878A0E002B5F3C /* MainNavigationController.h */,
-				CB42D54A1E878A0E002B5F3C /* MainNavigationController.m */,
-				CB42D5501E8792B4002B5F3C /* LeftMenuViewController.h */,
-				CB42D5511E8792B4002B5F3C /* LeftMenuViewController.m */,
+				CBE64E971E8B63B800BAE252 /* MainControllers */,
+				CB42D54C1E878A31002B5F3C /* ProductsScene */,
+				CBE64E9E1E8B789300BAE252 /* ShipmentsScene */,
+				CBE61EB81E88CFAF00BC5BAF /* UsersScene */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 		CB42D52A1E87698B002B5F3C /* ChalyCasillas */ = {
 			isa = PBXGroup;
 			children = (
+				CBE64E961E8B635D00BAE252 /* Manager */,
 				CB1F6BF21E8B00AF00D2E682 /* ViewControllers */,
 				CB42D52E1E87698B002B5F3C /* AppDelegate.h */,
 				CB42D52F1E87698B002B5F3C /* AppDelegate.m */,
@@ -158,6 +164,8 @@
 				CB2B081E1E88B39C00292DB3 /* ProductTableViewCell.h */,
 				CB2B081F1E88B39C00292DB3 /* ProductTableViewCell.m */,
 				CB2B08201E88B39C00292DB3 /* ProductTableViewCell.xib */,
+				CBE64E9B1E8B6F6A00BAE252 /* Product.h */,
+				CBE64E9C1E8B6F6A00BAE252 /* Product.m */,
 			);
 			name = ProductsScene;
 			sourceTree = "<group>";
@@ -169,8 +177,39 @@
 				CBE61EBF1E88D0FA00BC5BAF /* UsersTableViewController.m */,
 				CBE61EC11E88DB6D00BC5BAF /* AddUserViewController.h */,
 				CBE61EC21E88DB6D00BC5BAF /* AddUserViewController.m */,
+				CBE64E981E8B651100BAE252 /* User.h */,
+				CBE64E991E8B651100BAE252 /* User.m */,
 			);
 			name = UsersScene;
+			sourceTree = "<group>";
+		};
+		CBE64E961E8B635D00BAE252 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		CBE64E971E8B63B800BAE252 /* MainControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB42D5461E8782CB002B5F3C /* RootViewController.h */,
+				CB42D5471E8782CB002B5F3C /* RootViewController.m */,
+				CB42D5491E878A0E002B5F3C /* MainNavigationController.h */,
+				CB42D54A1E878A0E002B5F3C /* MainNavigationController.m */,
+				CB42D5501E8792B4002B5F3C /* LeftMenuViewController.h */,
+				CB42D5511E8792B4002B5F3C /* LeftMenuViewController.m */,
+			);
+			name = MainControllers;
+			sourceTree = "<group>";
+		};
+		CBE64E9E1E8B789300BAE252 /* ShipmentsScene */ = {
+			isa = PBXGroup;
+			children = (
+				CBE64E9F1E8B794F00BAE252 /* Shipment.h */,
+				CBE64EA01E8B794F00BAE252 /* Shipment.m */,
+			);
+			name = ShipmentsScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,8 +341,11 @@
 				CB42D5301E87698B002B5F3C /* AppDelegate.m in Sources */,
 				CB42D52D1E87698B002B5F3C /* main.m in Sources */,
 				CB42D5481E8782CB002B5F3C /* RootViewController.m in Sources */,
+				CBE64E9A1E8B651100BAE252 /* User.m in Sources */,
 				CB42D5521E8792B4002B5F3C /* LeftMenuViewController.m in Sources */,
 				CB2B08211E88B39C00292DB3 /* ProductTableViewCell.m in Sources */,
+				CBE64EA11E8B794F00BAE252 /* Shipment.m in Sources */,
+				CBE64E9D1E8B6F6A00BAE252 /* Product.m in Sources */,
 				CB42D5451E87822F002B5F3C /* HomeViewController.m in Sources */,
 				CB42D54B1E878A0E002B5F3C /* MainNavigationController.m in Sources */,
 			);
