@@ -23,6 +23,17 @@
     [realm commitWriteTransaction];
 }
 
-
++(RLMResults*) getAllObjectsByType:(int)objectType{
+    switch (objectType) {
+        case 1:
+            return [User allObjects];
+        case 2:
+            return [Product allObjects];
+        case 3:
+            return [Shipment allObjects];
+        default:
+            return nil;
+    }
+}
 
 @end

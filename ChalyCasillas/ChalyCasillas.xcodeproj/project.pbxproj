@@ -129,6 +129,7 @@
 		CB42D52A1E87698B002B5F3C /* ChalyCasillas */ = {
 			isa = PBXGroup;
 			children = (
+				CB9F027D1E8CC2EE0075C7A0 /* Utilities */,
 				CBE64E961E8B635D00BAE252 /* Manager */,
 				CB1F6BF21E8B00AF00D2E682 /* ViewControllers */,
 				CB42D52E1E87698B002B5F3C /* AppDelegate.h */,
@@ -171,6 +172,13 @@
 				CBE64E9C1E8B6F6A00BAE252 /* Product.m */,
 			);
 			name = ProductsScene;
+			sourceTree = "<group>";
+		};
+		CB9F027D1E8CC2EE0075C7A0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		CBE61EB81E88CFAF00BC5BAF /* UsersScene */ = {
