@@ -20,8 +20,8 @@
 		CB42D54B1E878A0E002B5F3C /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D54A1E878A0E002B5F3C /* MainNavigationController.m */; };
 		CB42D54F1E878A60002B5F3C /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D54E1E878A60002B5F3C /* ProductListViewController.m */; };
 		CB42D5521E8792B4002B5F3C /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D5511E8792B4002B5F3C /* LeftMenuViewController.m */; };
+		CB96CC6A1E8DDF7B008B4D37 /* AddUserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB96CC691E8DDF7B008B4D37 /* AddUserTableViewController.m */; };
 		CBE61EC01E88D0FA00BC5BAF /* UsersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE61EBF1E88D0FA00BC5BAF /* UsersTableViewController.m */; };
-		CBE61EC31E88DB6D00BC5BAF /* AddUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE61EC21E88DB6D00BC5BAF /* AddUserViewController.m */; };
 		CBE64E9A1E8B651100BAE252 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE64E991E8B651100BAE252 /* User.m */; };
 		CBE64E9D1E8B6F6A00BAE252 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE64E9C1E8B6F6A00BAE252 /* Product.m */; };
 		CBE64EA11E8B794F00BAE252 /* Shipment.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE64EA01E8B794F00BAE252 /* Shipment.m */; };
@@ -54,10 +54,11 @@
 		CB42D54E1E878A60002B5F3C /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
 		CB42D5501E8792B4002B5F3C /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
 		CB42D5511E8792B4002B5F3C /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		CB96CC681E8DDF7B008B4D37 /* AddUserTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddUserTableViewController.h; sourceTree = "<group>"; };
+		CB96CC691E8DDF7B008B4D37 /* AddUserTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddUserTableViewController.m; sourceTree = "<group>"; };
+		CBBAC8D51E8DB7A3003E1C6A /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		CBE61EBE1E88D0FA00BC5BAF /* UsersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersTableViewController.h; sourceTree = "<group>"; };
 		CBE61EBF1E88D0FA00BC5BAF /* UsersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersTableViewController.m; sourceTree = "<group>"; };
-		CBE61EC11E88DB6D00BC5BAF /* AddUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddUserViewController.h; sourceTree = "<group>"; };
-		CBE61EC21E88DB6D00BC5BAF /* AddUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddUserViewController.m; sourceTree = "<group>"; };
 		CBE64E981E8B651100BAE252 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		CBE64E991E8B651100BAE252 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		CBE64E9B1E8B6F6A00BAE252 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
@@ -177,6 +178,7 @@
 		CB9F027D1E8CC2EE0075C7A0 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				CBBAC8D51E8DB7A3003E1C6A /* Constants.h */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -186,10 +188,10 @@
 			children = (
 				CBE61EBE1E88D0FA00BC5BAF /* UsersTableViewController.h */,
 				CBE61EBF1E88D0FA00BC5BAF /* UsersTableViewController.m */,
-				CBE61EC11E88DB6D00BC5BAF /* AddUserViewController.h */,
-				CBE61EC21E88DB6D00BC5BAF /* AddUserViewController.m */,
 				CBE64E981E8B651100BAE252 /* User.h */,
 				CBE64E991E8B651100BAE252 /* User.m */,
+				CB96CC681E8DDF7B008B4D37 /* AddUserTableViewController.h */,
+				CB96CC691E8DDF7B008B4D37 /* AddUserTableViewController.m */,
 			);
 			name = UsersScene;
 			sourceTree = "<group>";
@@ -349,10 +351,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB42D54F1E878A60002B5F3C /* ProductListViewController.m in Sources */,
-				CBE61EC31E88DB6D00BC5BAF /* AddUserViewController.m in Sources */,
 				CBE61EC01E88D0FA00BC5BAF /* UsersTableViewController.m in Sources */,
 				CB42D5301E87698B002B5F3C /* AppDelegate.m in Sources */,
 				CB42D52D1E87698B002B5F3C /* main.m in Sources */,
+				CB96CC6A1E8DDF7B008B4D37 /* AddUserTableViewController.m in Sources */,
 				CB42D5481E8782CB002B5F3C /* RootViewController.m in Sources */,
 				CBE64E9A1E8B651100BAE252 /* User.m in Sources */,
 				CB42D5521E8792B4002B5F3C /* LeftMenuViewController.m in Sources */,

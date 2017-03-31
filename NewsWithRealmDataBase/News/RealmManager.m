@@ -32,7 +32,7 @@
     // You only need to do this once (per thread)
     // Add to Realm with transaction
     [realm beginWriteTransaction];
-    [realm addObject:realmObject];
+    [realm addOrUpdateObject:realmObject];
     [realm commitWriteTransaction];
 }
 

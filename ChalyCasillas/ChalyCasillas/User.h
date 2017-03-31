@@ -14,6 +14,7 @@
 @property NSString* name;
 @property NSString* phoneNumber;
 @property NSString* email;
+@property NSString* address;
 @property BOOL      active;
 @property RLMArray<Product *><Product> *products;
 @end

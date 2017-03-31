@@ -1,30 +1,36 @@
 //
-//  UsersTableViewController.m
+//  AddUserTableViewController.m
 //  ChalyCasillas
 //
-//  Created by Carlos Solano on 3/26/17.
+//  Created by Carlos Solano on 30/3/17.
 //  Copyright © 2017 Carlos Solano. All rights reserved.
 //
 
-#import "UsersTableViewController.h"
 #import "AddUserTableViewController.h"
-#import "UIViewController+LMSideBarController.h"
 
-@interface UsersTableViewController ()
+@interface AddUserTableViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
+@property (weak, nonatomic) IBOutlet UITextField *statusTextField;
+@property (weak, nonatomic) IBOutlet UITextView *addressTextView;
 
 @end
 
-@implementation UsersTableViewController
+@implementation AddUserTableViewController
+
+- (IBAction)addUserAction:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addUserButton];
-    [self addMenuButton];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-     //self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,31 +41,11 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+    return 6;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
-}
-
--(void) addUserButton{
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addUserAction)];
-    self.navigationItem.rightBarButtonItem = addButton;
-}
-
--(void) addUserAction{
-    AddUserTableViewController *addUserViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"AddUserTableViewController"];
-    [self.navigationController pushViewController:addUserViewController animated:true];
-}
-
--(void) addMenuButton{
-    UIImage *image = [[UIImage imageNamed:@"btn_left_menu"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(menuAction)];
-    self.navigationItem.leftBarButtonItem = addButton;
-}
-
--(void) menuAction{
-    [self.sideBarController showMenuViewControllerInDirection:LMSideBarControllerDirectionLeft];
+    return 1;
 }
 
 /*

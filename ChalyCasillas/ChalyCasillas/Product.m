@@ -10,4 +10,8 @@
 
 @implementation Product
 
++ (NSString *)primaryKey {
+    return @"trackingNumber";
+}
+
 @end

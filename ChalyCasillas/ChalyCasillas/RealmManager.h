@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <Realm/Realm.h>
+@class User;
 
 @interface RealmManager : NSObject
-
++(void)saveOrUpdateRealmObject:(RLMObject *) realmObject;
++(void)createUserWithName:(NSString*)name phoneNumber:(NSString*)phoneNumber email:(NSString*)email active:(BOOL) active address:(NSString*)address;
++(void) createProductWithTitle:(NSString*)productTitle observation:(NSString*)observation trackingNumber:(NSString*)trackingNumber courier:(NSString*)courier pounds:(int)pounds user:(User*)user currentState:(NSString*)currentState;
 @end
