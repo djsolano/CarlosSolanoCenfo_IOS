@@ -92,6 +92,12 @@
                     <constraint firstAttribute="bottom" secondItem="Bf6-xG-fqo" secondAttribute="bottom" id="drM-XU-O3J"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="carrierLabel" destination="luH-ez-S4J" id="5on-SK-Lxl"/>
+                <outlet property="clientLabel" destination="tvJ-Mc-7TD" id="SdB-ny-27X"/>
+                <outlet property="productNameLabel" destination="O9r-zx-QXI" id="vPq-fW-0RB"/>
+                <outlet property="trackingLabel" destination="pbS-Zw-4r8" id="HZF-Jg-6aQ"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

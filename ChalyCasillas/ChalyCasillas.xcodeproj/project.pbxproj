@@ -20,6 +20,9 @@
 		CB42D54B1E878A0E002B5F3C /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D54A1E878A0E002B5F3C /* MainNavigationController.m */; };
 		CB42D54F1E878A60002B5F3C /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D54E1E878A60002B5F3C /* ProductListViewController.m */; };
 		CB42D5521E8792B4002B5F3C /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42D5511E8792B4002B5F3C /* LeftMenuViewController.m */; };
+		CB938B191E8E23D0009955A7 /* UITableView+RegisterCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB938B161E8E23D0009955A7 /* UITableView+RegisterCustomCell.m */; };
+		CB938B1A1E8E23D0009955A7 /* UITableViewCell+GetClassName.m in Sources */ = {isa = PBXBuildFile; fileRef = CB938B181E8E23D0009955A7 /* UITableViewCell+GetClassName.m */; };
+		CB938B1D1E8E2819009955A7 /* AddProductTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB938B1C1E8E2818009955A7 /* AddProductTableViewController.m */; };
 		CB96CC6A1E8DDF7B008B4D37 /* AddUserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB96CC691E8DDF7B008B4D37 /* AddUserTableViewController.m */; };
 		CBE61EC01E88D0FA00BC5BAF /* UsersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE61EBF1E88D0FA00BC5BAF /* UsersTableViewController.m */; };
 		CBE64E9A1E8B651100BAE252 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE64E991E8B651100BAE252 /* User.m */; };
@@ -54,6 +57,12 @@
 		CB42D54E1E878A60002B5F3C /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
 		CB42D5501E8792B4002B5F3C /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
 		CB42D5511E8792B4002B5F3C /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		CB938B151E8E23D0009955A7 /* UITableView+RegisterCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+RegisterCustomCell.h"; sourceTree = "<group>"; };
+		CB938B161E8E23D0009955A7 /* UITableView+RegisterCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+RegisterCustomCell.m"; sourceTree = "<group>"; };
+		CB938B171E8E23D0009955A7 /* UITableViewCell+GetClassName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+GetClassName.h"; sourceTree = "<group>"; };
+		CB938B181E8E23D0009955A7 /* UITableViewCell+GetClassName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+GetClassName.m"; sourceTree = "<group>"; };
+		CB938B1B1E8E2818009955A7 /* AddProductTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddProductTableViewController.h; sourceTree = "<group>"; };
+		CB938B1C1E8E2818009955A7 /* AddProductTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddProductTableViewController.m; sourceTree = "<group>"; };
 		CB96CC681E8DDF7B008B4D37 /* AddUserTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddUserTableViewController.h; sourceTree = "<group>"; };
 		CB96CC691E8DDF7B008B4D37 /* AddUserTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddUserTableViewController.m; sourceTree = "<group>"; };
 		CBBAC8D51E8DB7A3003E1C6A /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -171,6 +180,8 @@
 				CB2B08201E88B39C00292DB3 /* ProductTableViewCell.xib */,
 				CBE64E9B1E8B6F6A00BAE252 /* Product.h */,
 				CBE64E9C1E8B6F6A00BAE252 /* Product.m */,
+				CB938B1B1E8E2818009955A7 /* AddProductTableViewController.h */,
+				CB938B1C1E8E2818009955A7 /* AddProductTableViewController.m */,
 			);
 			name = ProductsScene;
 			sourceTree = "<group>";
@@ -178,6 +189,10 @@
 		CB9F027D1E8CC2EE0075C7A0 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				CB938B151E8E23D0009955A7 /* UITableView+RegisterCustomCell.h */,
+				CB938B161E8E23D0009955A7 /* UITableView+RegisterCustomCell.m */,
+				CB938B171E8E23D0009955A7 /* UITableViewCell+GetClassName.h */,
+				CB938B181E8E23D0009955A7 /* UITableViewCell+GetClassName.m */,
 				CBBAC8D51E8DB7A3003E1C6A /* Constants.h */,
 			);
 			name = Utilities;
@@ -360,7 +375,10 @@
 				CB42D5521E8792B4002B5F3C /* LeftMenuViewController.m in Sources */,
 				CB2B08211E88B39C00292DB3 /* ProductTableViewCell.m in Sources */,
 				CB0D660D1E8C22630030DD8B /* RealmManager.m in Sources */,
+				CB938B191E8E23D0009955A7 /* UITableView+RegisterCustomCell.m in Sources */,
 				CBE64EA11E8B794F00BAE252 /* Shipment.m in Sources */,
+				CB938B1A1E8E23D0009955A7 /* UITableViewCell+GetClassName.m in Sources */,
+				CB938B1D1E8E2819009955A7 /* AddProductTableViewController.m in Sources */,
 				CBE64E9D1E8B6F6A00BAE252 /* Product.m in Sources */,
 				CB42D5451E87822F002B5F3C /* HomeViewController.m in Sources */,
 				CB42D54B1E878A0E002B5F3C /* MainNavigationController.m in Sources */,

@@ -8,26 +8,60 @@
 
 #import "ProductListViewController.h"
 #import "UIViewController+LMSideBarController.h"
+#import "UITableView+RegisterCustomCell.h"
+#import "UITableViewCell+GetClassName.h"
+#import "RealmManager.h"
+#import "ProductTableViewCell.h"
+#import "Product.h"
+#import "Constants.h"
+#import "User.h"
+#import "AddProductTableViewController.h"
 
 @interface ProductListViewController ()
-
+@property (weak, nonatomic) IBOutlet UITableView *productsTableView;
+@property RLMResults * productsArray;
 @end
 
 @implementation ProductListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.productsTableView registerCustomCellWithName:[ProductTableViewCell getClassName]];
     [self addMenuButton];
+    [self addProductButton];
     // Do any additional setup after loading the view.
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self loadData];
+}
+
+-(void) addProductButton{
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addProductAction)];
+    self.navigationItem.rightBarButtonItem = addButton;
+}
+
+-(void) addProductAction{
+    AddProductTableViewController *addProductViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"AddProductTableViewController"];
+    [self.navigationController pushViewController:addProductViewController animated:true];
+}
+
+-(void)loadData{
+    self.productsArray = [RealmManager getAllObjectsByType:PRODUCT_OBJECT_TYPE];
+    [self.productsTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)showMenu:(id)sender {
-    [self.sideBarController showMenuViewControllerInDirection:LMSideBarControllerDirectionLeft];
 
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    ProductTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:[ProductTableViewCell getClassName]];
+    Product * product = self.productsArray[indexPath.row];
+    [cell setupCellWithProduct:product];
+    return cell;
 }
 
 -(void) addMenuButton{
@@ -40,14 +74,14 @@
     [self.sideBarController showMenuViewControllerInDirection:LMSideBarControllerDirectionLeft];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 120;
 }
-*/
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.productsArray.count;
+}
+
+
 
 @end

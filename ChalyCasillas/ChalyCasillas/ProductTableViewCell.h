@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Product;
 
 @interface ProductTableViewCell : UITableViewCell
-
+-(void)setupCellWithProduct:(Product*)product;
 @end

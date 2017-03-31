@@ -1,39 +1,27 @@
 //
-//  UsersTableViewController.m
+//  AddProductTableViewController.m
 //  ChalyCasillas
 //
-//  Created by Carlos Solano on 3/26/17.
+//  Created by Carlos Solano on 3/31/17.
 //  Copyright © 2017 Carlos Solano. All rights reserved.
 //
 
-#import "UsersTableViewController.h"
-#import "AddUserTableViewController.h"
-#import "UIViewController+LMSideBarController.h"
-#import "RealmManager.h"
-#import "Constants.h"
-#import "User.h"
+#import "AddProductTableViewController.h"
 
-@interface UsersTableViewController ()
-@property RLMResults * userArray;
-@property (strong, nonatomic) IBOutlet UITableView *usersTableView;
+@interface AddProductTableViewController ()
+
 @end
 
-@implementation UsersTableViewController
+@implementation AddProductTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addUserButton];
-    [self addMenuButton];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-     //self.navigationItem.leftBarButtonItem = self.editButtonItem;
-}
-
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [self loadData];
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,46 +29,27 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)loadData{
-    self.userArray = [RealmManager getAllObjectsByType:USER_OBJECT_TYPE];
-    [self.usersTableView reloadData];
-}
-
 #pragma mark - Table view data source
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Incomplete implementation, return the number of sections
+    return 0;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.userArray.count;
+#warning Incomplete implementation, return the number of rows
+    return 0;
 }
 
--(void) addUserButton{
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addUserAction)];
-    self.navigationItem.rightBarButtonItem = addButton;
-}
-
--(void) addUserAction{
-    AddUserTableViewController *addUserViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"AddUserTableViewController"];
-    [self.navigationController pushViewController:addUserViewController animated:true];
-}
-
--(void) addMenuButton{
-    UIImage *image = [[UIImage imageNamed:@"btn_left_menu"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(menuAction)];
-    self.navigationItem.leftBarButtonItem = addButton;
-}
-
--(void) menuAction{
-    [self.sideBarController showMenuViewControllerInDirection:LMSideBarControllerDirectionLeft];
-}
-
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"userTableCell" forIndexPath:indexPath];
-    User* user = self.userArray[indexPath.row];
-    cell.textLabel.text = user.name;
-    cell.detailTextLabel.text = user.phoneNumber;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
+    // Configure the cell...
+    
     return cell;
 }
+*/
 
 /*
 // Override to support conditional editing of the table view.
