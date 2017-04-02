@@ -7,8 +7,19 @@
 //
 
 #import "AddProductTableViewController.h"
+#import "RealmManager.h"
+#import "User.h"
+#import "Product.h"
 
 @interface AddProductTableViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
+@property (weak, nonatomic) IBOutlet UITextField *trackingTextField;
+@property (weak, nonatomic) IBOutlet UITextField *courierTextField;
+@property (weak, nonatomic) IBOutlet UITextField *pondsTextField;
+@property (weak, nonatomic) IBOutlet UITextField *userTextField;
+@property (weak, nonatomic) IBOutlet UITextField *statusTextField;
+@property (weak, nonatomic) IBOutlet UITextView *observationTextView;
+
 
 @end
 
@@ -16,7 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self saveProductButton];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -29,10 +40,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void) saveProductButton{
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveProductAction)];
+    self.navigationItem.rightBarButtonItem = addButton;
+}
+
+-(void) saveProductAction{
+    User* user = [RealmManager getUserWithPhoneNumber:self.userTextField.text];
+    [RealmManager createProductWithTitle:self.titleTextField.text observation:self.observationTextView.text trackingNumber:self.trackingTextField.text courier:self.courierTextField.text pounds:[self.pondsTextField.text intValue] user:user currentState:self.statusTextField.text];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+    return 7;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

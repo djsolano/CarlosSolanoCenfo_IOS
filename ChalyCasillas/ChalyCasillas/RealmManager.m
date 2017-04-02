@@ -37,6 +37,11 @@
     }
 }
 
++(User*) getUserWithPhoneNumber:(NSString*)phoneNumber{
+    User * user = [User objectForPrimaryKey:phoneNumber];
+    return user;
+}
+
 +(void)createUserWithName:(NSString*)name phoneNumber:(NSString*)phoneNumber email:(NSString*)email active:(BOOL) active address:(NSString*)address{
     User * user = [[User alloc] init];
     user.name = name;
@@ -55,6 +60,7 @@
     product.courier = courier;
     product.pounds = pounds;
     product.currentState = currentState;
+    product.user = user;
     [RealmManager saveOrUpdateRealmObject:product];
     RLMRealm *realm = [RLMRealm defaultRealm];
     [realm beginWriteTransaction];
