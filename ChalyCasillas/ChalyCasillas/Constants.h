@@ -13,5 +13,10 @@
 #define PRODUCT_OBJECT_TYPE  2
 #define SHIPMENT_OBJECT_TYPE 3
 
+#define kCourierTextFieldTag 1
+#define kPoundsTextFieldTag  2
+#define kUserTextFieldTag    3
+#define kStatusTextFieldTag  4
+
 
 #endif /* Constants_h */

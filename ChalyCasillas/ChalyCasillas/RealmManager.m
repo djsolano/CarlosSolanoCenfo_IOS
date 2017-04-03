@@ -24,6 +24,16 @@
     [realm commitWriteTransaction];
 }
 
++(void)deleteRealObject:(RLMObject*) realmObject{
+    // Get the default Realm
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    // You only need to do this once (per thread)
+    [realm beginWriteTransaction];
+    [realm deleteObject:realmObject];
+    [realm commitWriteTransaction];
+    
+}
+
 +(RLMResults*) getAllObjectsByType:(int)objectType{
     switch (objectType) {
         case USER_OBJECT_TYPE:
@@ -42,13 +52,19 @@
     return user;
 }
 
-+(void)createUserWithName:(NSString*)name phoneNumber:(NSString*)phoneNumber email:(NSString*)email active:(BOOL) active address:(NSString*)address{
++(Product*)getProductWithTrackingNumber:(NSString*)trackingNumber{
+    Product * product = [Product objectForPrimaryKey:trackingNumber];
+    return product;
+}
+
++(void)createUserWithName:(NSString*)name phoneNumber:(NSString*)phoneNumber email:(NSString*)email active:(BOOL) active address:(NSString*)address products:(RLMArray<Product *><Product> *)products{
     User * user = [[User alloc] init];
     user.name = name;
     user.phoneNumber = phoneNumber;
     user.email = email;
     user.active = active;
     user.address = address;
+    user.products = products;
     [RealmManager saveOrUpdateRealmObject:user];
 }
 

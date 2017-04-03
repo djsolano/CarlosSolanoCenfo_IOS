@@ -10,8 +10,10 @@
 #import "RealmManager.h"
 #import "User.h"
 #import "Product.h"
+#import "UMAlertView.h"
+#import "Constants.h"
 
-@interface AddProductTableViewController ()
+@interface AddProductTableViewController ()<UMAlertViewDelegate,UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextField *trackingTextField;
 @property (weak, nonatomic) IBOutlet UITextField *courierTextField;
@@ -19,7 +21,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *userTextField;
 @property (weak, nonatomic) IBOutlet UITextField *statusTextField;
 @property (weak, nonatomic) IBOutlet UITextView *observationTextView;
-
+@property (nonatomic) UMAlertView *umCourierAlertView;
+@property (nonatomic) UMAlertView *umPoundsAlertView;
+@property (nonatomic) UMAlertView *umUserAlertView;
+@property (nonatomic) UMAlertView *umStatusAlertView;
 
 @end
 
@@ -28,6 +33,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self saveProductButton];
+    self.umCourierAlertView = [[UMAlertView alloc] init];
+    self.umCourierAlertView.delegate = self;
+    
+    self.umPoundsAlertView = [[UMAlertView alloc] init];
+    self.umPoundsAlertView.delegate = self;
+    
+    self.umUserAlertView = [[UMAlertView alloc] init];
+    self.umUserAlertView.delegate = self;
+    
+    self.umStatusAlertView = [[UMAlertView alloc] init];
+    self.umStatusAlertView.delegate = self;
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -46,9 +63,84 @@
 }
 
 -(void) saveProductAction{
-    User* user = [RealmManager getUserWithPhoneNumber:self.userTextField.text];
+    NSArray* myArray = [self.userTextField.text  componentsSeparatedByString:@"-"];
+    NSString* phoneNumber = [myArray objectAtIndex:1];
+    User* user = [RealmManager getUserWithPhoneNumber:phoneNumber];
     [RealmManager createProductWithTitle:self.titleTextField.text observation:self.observationTextView.text trackingNumber:self.trackingTextField.text courier:self.courierTextField.text pounds:[self.pondsTextField.text intValue] user:user currentState:self.statusTextField.text];
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)selectUMAlertButton {
+    if([self.umCourierAlertView selectData] != nil){
+        [self.courierTextField setText:[self.umCourierAlertView selectData]];
+        [self.umCourierAlertView um_dismissAlertViewCompletion:^{
+            [self.courierTextField resignFirstResponder];
+        }];
+    }
+    if([self.umPoundsAlertView selectData] != nil){
+        [self.pondsTextField setText:[self.umPoundsAlertView selectData]];
+        [self.umPoundsAlertView um_dismissAlertViewCompletion:^{
+            [self.pondsTextField resignFirstResponder];
+        }];
+    }
+    if([self.umUserAlertView selectData] != nil){
+        [self.userTextField setText:[self.umUserAlertView selectData]];
+        [self.umUserAlertView um_dismissAlertViewCompletion:^{
+            [self.userTextField resignFirstResponder];
+        }];
+    }
+    if([self.umStatusAlertView selectData] != nil){
+        [self.statusTextField setText:[self.umStatusAlertView selectData]];
+        [self.umStatusAlertView um_dismissAlertViewCompletion:^{
+            [self.statusTextField resignFirstResponder];
+        }];
+    }
+}
+
+- (void)selectUMAlertCancelButton {
+    [self.umCourierAlertView um_dismissAlertView];
+    [self.umPoundsAlertView um_dismissAlertView];
+    [self.umUserAlertView um_dismissAlertView];
+    [self.umStatusAlertView um_dismissAlertView];
+}
+
+- (void)initializeAlertPicker:(UITextField *)textField {
+    if(textField.tag == kCourierTextFieldTag){
+        NSArray *array = [[NSArray alloc] initWithObjects:@"USPS", @"UPS", @"FEDEX", @"AMAZON LOGISTIC", @"CHINA POST", @"MALASYA POST", nil];
+        [self.umCourierAlertView um_showAlertViewTitle:@"COURIER" pickerData:array haveCancelButton:YES completion:^{
+        NSLog(@"UMCourierView show success");
+        }];
+    }
+    if(textField.tag == kPoundsTextFieldTag){
+        NSMutableArray *array = [NSMutableArray new];
+        for (int i=1; i<71; i++) {
+            [array addObject:[NSString stringWithFormat:@"%d",i]];
+        }
+        [self.umPoundsAlertView um_showAlertViewTitle:@"POUNDS" pickerData:array haveCancelButton:YES completion:^{
+            NSLog(@"UMCourierView show success");
+        }];
+    }
+    if(textField.tag == kUserTextFieldTag){
+        RLMResults * usersArray = [RealmManager getAllObjectsByType:USER_OBJECT_TYPE];
+        NSMutableArray *array = [NSMutableArray new];
+        for (User* user in usersArray) {
+            [array addObject:[NSString stringWithFormat:@"%@-%@",user.name,user.phoneNumber]];
+        }
+        [self.umUserAlertView um_showAlertViewTitle:@"USERS" pickerData:array haveCancelButton:YES completion:^{
+            NSLog(@"UMCourierView show success");
+        }];
+    }
+    if(textField.tag == kStatusTextFieldTag){
+        NSArray *array = [[NSArray alloc] initWithObjects:@"SHIPPED FROM STORE", @"RECEIVED IN WAREHOUSE", @"SHIPPED TO COSTA RICA", @"READY TO PICK UP", @"DELIVERED TO CUSTOMER", nil];
+        [self.umStatusAlertView um_showAlertViewTitle:@"STATUS" pickerData:array haveCancelButton:YES completion:^{
+            NSLog(@"UMCourierView show success");
+        }];
+    }
+}
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    [self initializeAlertPicker:textField];
+    return NO;
 }
 
 #pragma mark - Table view data source

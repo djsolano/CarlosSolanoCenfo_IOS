@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class User;
 
-@interface AddUserTableViewController : UITableViewController
-
+@interface AddUserTableViewController : UITableViewController<UIPickerViewDelegate,UIPickerViewDataSource>
+@property(strong,nonatomic)User* user;
 @end

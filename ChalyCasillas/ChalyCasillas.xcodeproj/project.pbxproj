@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB0023731E91C9B700D029B9 /* UMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0023721E91C9B700D029B9 /* UMAlertView.m */; };
 		CB0D660D1E8C22630030DD8B /* RealmManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0D660C1E8C22630030DD8B /* RealmManager.m */; };
 		CB2B08211E88B39C00292DB3 /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2B081F1E88B39C00292DB3 /* ProductTableViewCell.m */; };
 		CB2B08221E88B39C00292DB3 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2B08201E88B39C00292DB3 /* ProductTableViewCell.xib */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		3B5D5A036324EE971726DAE6 /* Pods-ChalyCasillas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChalyCasillas.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChalyCasillas/Pods-ChalyCasillas.release.xcconfig"; sourceTree = "<group>"; };
 		94417D94D80CA0C28DD097F3 /* libPods-ChalyCasillas.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChalyCasillas.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0023711E91C9B700D029B9 /* UMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMAlertView.h; sourceTree = "<group>"; };
+		CB0023721E91C9B700D029B9 /* UMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMAlertView.m; sourceTree = "<group>"; };
 		CB0D660B1E8C22630030DD8B /* RealmManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmManager.h; sourceTree = "<group>"; };
 		CB0D660C1E8C22630030DD8B /* RealmManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmManager.m; sourceTree = "<group>"; };
 		CB2B081E1E88B39C00292DB3 /* ProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
@@ -106,6 +109,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB0023701E91C99400D029B9 /* UMAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				CB0023711E91C9B700D029B9 /* UMAlertView.h */,
+				CB0023721E91C9B700D029B9 /* UMAlertView.m */,
+			);
+			name = UMAlertView;
+			sourceTree = "<group>";
+		};
 		CB1F6BF21E8B00AF00D2E682 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +151,7 @@
 		CB42D52A1E87698B002B5F3C /* ChalyCasillas */ = {
 			isa = PBXGroup;
 			children = (
+				CB0023701E91C99400D029B9 /* UMAlertView */,
 				CB9F027D1E8CC2EE0075C7A0 /* Utilities */,
 				CBE64E961E8B635D00BAE252 /* Manager */,
 				CB1F6BF21E8B00AF00D2E682 /* ViewControllers */,
@@ -374,6 +387,7 @@
 				CBE64E9A1E8B651100BAE252 /* User.m in Sources */,
 				CB42D5521E8792B4002B5F3C /* LeftMenuViewController.m in Sources */,
 				CB2B08211E88B39C00292DB3 /* ProductTableViewCell.m in Sources */,
+				CB0023731E91C9B700D029B9 /* UMAlertView.m in Sources */,
 				CB0D660D1E8C22630030DD8B /* RealmManager.m in Sources */,
 				CB938B191E8E23D0009955A7 /* UITableView+RegisterCustomCell.m in Sources */,
 				CBE64EA11E8B794F00BAE252 /* Shipment.m in Sources */,

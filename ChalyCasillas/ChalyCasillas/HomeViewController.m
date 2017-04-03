@@ -8,9 +8,12 @@
 
 #import "HomeViewController.h"
 #import "UIViewController+LMSideBarController.h"
-
+#import "RealmManager.h"
+#import "Constants.h"
 @interface HomeViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *infoLabel;
+@property RLMResults * userArray;
+@property RLMResults * productsArray;
 @end
 
 @implementation HomeViewController
@@ -18,6 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self addMenuButton];
+    self.productsArray = [RealmManager getAllObjectsByType:PRODUCT_OBJECT_TYPE];
+    self.userArray = [RealmManager getAllObjectsByType:USER_OBJECT_TYPE];
+    self.infoLabel.text = [NSString stringWithFormat:@"Total users: %lu - Total products: %lu",(unsigned long)self.productsArray.count,(unsigned long)self.userArray.count];
     // Do any additional setup after loading the view.
 }
 
